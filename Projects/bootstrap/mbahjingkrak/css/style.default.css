@@ -164,6 +164,10 @@ NAVBAR
 .header-section p{
   font-size: 14px;
 }
+p {
+    margin: 0 0 23px;
+    margin-bottom: 10px;
+}
 .navbar {
   z-index: 10;
   text-transform: uppercase;
@@ -179,6 +183,21 @@ NAVBAR
 .navbar a.navbar-brand:focus,
 .navbar a.navbar-brand:hover {
   border-bottom: none;
+}
+section {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.img-responsive2 {
+  height: 200px;
+  display: block
+}
+a {
+  color: #7fb401;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 12pt
 }
 @media (min-width: 768px) {
   .navbar ul.nav > li > a {
@@ -1256,6 +1275,12 @@ section.events .profile ul.date li.month span {
   border-radius: 5px;
 }
 /* blog */
+.blog .blog-meta li {
+  display: inline-block;
+  font-size: 14px;
+  color: #10161A;
+  margin-right: 20px;
+}
 #blog .blog-item-wrapper {
   background: #fff;
   border-radius: 0px;
