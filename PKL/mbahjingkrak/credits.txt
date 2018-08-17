@@ -1,0 +1,26 @@
+Photos Sources
+===================================================
+
+https://www.pexels.com/photo/bread-food-wood-coffee-86753/
+https://www.pexels.com/photo/salad-pomegranate-chicken-spinach-5916/
+https://www.pexels.com/photo/food-dish-food-photography-tuna-110814/
+https://www.pexels.com/photo/food-dinner-lemon-rice-8758/
+https://www.pexels.com/photo/spinach-and-beetroot-salad-5928/
+https://www.pexels.com/photo/lunch-5944/
+https://www.pexels.com/photo/lunch-table-salad-5876/
+http://www.pngall.com/food-png
+http://www.pngpix.com/?s=food
+https://www.pexels.com/photo/food-cook-oven-11415/
+https://www.pexels.com/photo/pasta-dish-on-white-plate-26646/
+https://www.pexels.com/photo/food-coffee-lunch-burrito-6500/
+
+
+Plugins Used
+===================================================
+https://github.com/themicon/smoothscroll
+https://owlcarousel2.github.io/OwlCarousel2/index.html
+https://tympanus.net/codrops/2012/06/05/fullscreen-slit-slider-with-jquery-and-css3/
+http://senthilraj.github.io/TimePicki/
+https://jqueryvalidation.org/
+https://github.com/lokesh/lightbox2
+https://github.com/t1m0n/air-datepicker
