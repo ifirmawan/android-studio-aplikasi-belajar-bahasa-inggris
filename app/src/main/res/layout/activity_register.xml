@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/pict1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logobbi" />
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/etUname"
+            android:layout_below="@+id/pict1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="User Name"
+            android:textColor="@color/hitam"
+            android:textColorHint="@color/hitam"
+            android:textColorHighlight="@color/hitam"/>
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/etfullName"
+            android:layout_below="@+id/etUname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Full Name"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/hitam"
+            android:textColorHint="@color/hitam"
+            android:textColorHighlight="@color/hitam"/>
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/etPassword"
+            android:layout_below="@+id/etfullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30px"
+            android:padding="15dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/hitam"
+            android:textColorHint="@color/hitam"
+            android:textColorHighlight="@color/hitam"/>
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/etPasswordUlang"
+            android:layout_below="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30px"
+            android:padding="15dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Repeat Password"
+            android:textColor="@color/hitam"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hitam"
+            android:textColorHighlight="@color/hitam"/>
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPasswordUlang"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shapelogin"
+            android:padding="15dp"
+            android:layout_centerInParent="true"
+            android:shadowColor="@android:color/transparent"
+            android:text="Sign Up" />
+        <TextView
+            android:id="@+id/tvAsk2"
+            android:layout_below="@id/btnSignup"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Have Account?"
+            android:textAlignment="center"
+            android:textColor="@color/hitam"/>
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_below="@+id/tvAsk2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/biru"
+            android:onClick="goLogin"/>
+    </RelativeLayout>
+
+</ScrollView>
