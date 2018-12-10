@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivKado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingTop="100dp"
+            android:background="@color/transparan"
+            android:src="@drawable/creativity"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvBBI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivKado"
+            android:paddingTop="75dp"
+            android:text="@string/app_name"
+            android:textColor="@color/biru"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/tvBahasaInggris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBBI"
+            android:layout_alignParentBottom="true"
+            android:text="Belajar Bahasa Inggris"
+            android:textAlignment="center"
+            android:textColor="@color/biru"
+            android:textSize="8pt" />
+    </RelativeLayout>
+
+</ScrollView>

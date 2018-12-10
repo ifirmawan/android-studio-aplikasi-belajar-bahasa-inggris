@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/isiMateriLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/judul"
+                android:text="Noun and Pronoun"
+                android:textAlignment="center"
+                android:fontFamily="@font/opensans_reguler"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:textSize="10pt"
+                android:paddingBottom="10dp"/>
+            <ImageButton
+                android:id="@+id/imgVi2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/judul"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:src="@drawable/personal"
+                android:onClick="playMusic"
+                android:background="@color/transparan"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/nameTxt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgVi2"
+                android:fontFamily="@font/opensans_reguler"
+                android:layout_margin="16dp"
+                android:text="1. PERSONAL PRONOUNS
+                \n\nNamely person pronouns. In sentences, these pronouns are used as subjects and as objects. Different uses make the shape change. To be more complete, consider the table above:"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/nameTxt55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTxt4"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/opensans_reguler"
+                android:text="Example:
+        \n\n - She loves him.
+        \n\n - Let them come.
+        \n\n - He loves me."
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/imgVi3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/possesive"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nameTxt55"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:onClick="playMusic"
+                android:background="@color/transparan"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/nameTxt4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgVi3"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/opensans_reguler"
+                android:text="2. POSSESIVE PRONOUN
+                \n\n Namely the pronoun that declares belonging. In the sentence the usage can be divided into obsessive adjectives and obsessive pronouns. It is called obsessive adjectives because the word functions as adjectives."
+                android:textSize="18sp" />
+            <!--<TextView-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@color/rumus"-->
+                <!--android:id="@+id/nameTxt4b"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_below="@+id/nameTxt4a"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="10pt"-->
+                <!--android:textAlignment="center"-->
+                <!--android:text="to be + comparative + than"/>-->
+            <TextView
+                android:id="@+id/nameTxt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTxt4a"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/opensans_reguler"
+                android:text="Example:
+        \n\n - This pen is yours.
+        \n\n - This pen is mine.
+        \n\n - This pen is theirs."
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/imgVi5"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nameTxt5"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:src="@drawable/reflex"
+                android:onClick="playMusic"
+                android:background="@color/transparan"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:id="@+id/nameTxt4aa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgVi5"
+                android:layout_margin="16dp"
+                android:text="3. REFLEXSIVE PRONOUN
+        \n\nNamely a pronoun that states about yourself."
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/nameTxt555"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTxt4aa"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/opensans_reguler"
+                android:text="Example:
+        \n\n To say about yourself:
+        \n\n  - I did my homework myself.
+        \n\n To strengthen meaning or emphasize:
+        \n\n  - They themselves agreed to sign."
+                android:textSize="18sp" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/quizkecilsatu"
+                android:onClick="quiskeciltiga"
+                android:layout_below="@+id/nameTxt555"
+                android:layout_centerHorizontal="true"
+                android:text="Take Simple Quiz"
+                android:fontFamily="@font/opensans_reguler"
+                android:textStyle="bold"
+                android:background="@drawable/mybutton"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

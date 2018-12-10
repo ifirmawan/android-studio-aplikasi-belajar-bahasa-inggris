@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.v7.widget.CardView
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgVi"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:clickable="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/nameTxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgVi"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="12pt"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</ScrollView>

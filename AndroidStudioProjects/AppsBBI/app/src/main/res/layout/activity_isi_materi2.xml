@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/isiMateriLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNext"
+                android:text="Degree of comparisson"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:fontFamily="@font/opensans_reguler"
+                android:textSize="10pt"
+                android:paddingBottom="10dp"/>
+            <ImageButton
+                android:id="@+id/imgVi2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tvNext"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:src="@drawable/pos"
+                android:onClick="playMusic"
+                android:background="@color/transparan"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/nameTxt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgVi2"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/opensans_reguler"
+                android:text="1. POSITIVE DEGREE
+        \n\nPositive Degree is an adjective used to express that an object or person is in the same state as the others. This sentence arrangement is formed by placing adjectives between two axes."
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@color/rumus"
+                android:id="@+id/rumus1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nameTxt4"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:textAlignment="center"
+                android:text="to be + as + adjective + as"/>
+            <TextView
+                android:id="@+id/nameTxt55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rumus1"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/opensans_reguler"
+                android:text="Example:
+        \n\n - He is as tall as his uncle.
+        \n\n - Najlia is as smart as Rania.
+        \n\n -You are as small as my sister."
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/imgVi3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/compara"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nameTxt55"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:onClick="playMusic"
+                android:background="@color/transparan"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/nameTxt4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgVi3"
+                android:fontFamily="@font/opensans_reguler"
+                android:layout_margin="16dp"
+                android:text="2. COMPARATIVE DEGREE
+        \n\nComparative Degree is used to state that the state of an object or person is more than the other. The rules for forming this sentence are as follows:"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@color/rumus"
+                android:id="@+id/nameTxt4b"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nameTxt4a"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:textAlignment="center"
+                android:text="to be + comparative + than"/>
+            <TextView
+                android:id="@+id/nameTxt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTxt4b"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/opensans_reguler"
+                android:text="Example:
+        \n\n - My house is larger than Doni's house.
+        \n\n - Magazine is more interesting than newspaper.
+        \n\n - Mr. Jack is Richer than Mr. Black."
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/imgVi5"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nameTxt5"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:src="@drawable/sumperla"
+                android:onClick="playMusic"
+                android:background="@color/transparan"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:id="@+id/nameTxt4aa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_reguler"
+                android:layout_below="@id/imgVi5"
+                android:layout_margin="16dp"
+                android:text="3. SUPERLATIVE DEGREE
+        \n\n Superlative Degree is used to state that an object or person is the most compared to others."
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@color/rumus"
+                android:id="@+id/nameTxt4bb"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/nameTxt4aa"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:textAlignment="center"
+                android:text="to be + the superlative"/>
+            <TextView
+                android:id="@+id/nameTxt555"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTxt4bb"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/opensans_reguler"
+                android:text="Example:
+        \n\n  - Mustofa is the most handsome man in the world.
+        \n\n  - Muhammad is the richest person.
+        \n\n  - The plane is the fastest transportation."
+                android:textSize="18sp" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/quizkecilsatu"
+                android:onClick="quiskecildua"
+                android:fontFamily="@font/opensans_reguler"
+                android:textStyle="bold"
+                android:layout_below="@+id/nameTxt555"
+                android:layout_centerHorizontal="true"
+                android:text="Take Simple Quiz"
+                android:background="@drawable/mybutton"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quissimple3">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvHead1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="16dp"
+        android:text="Simple Quiz"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/nameTxt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHead1"
+        android:layout_margin="16dp"
+        android:text="fill in the blanks by listening to the song below"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp" />
+    <!--=====================================================-->
+    <ImageButton
+        android:id="@+id/imgVi6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameTxt8"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="playJawaban1"
+        android:src="@drawable/bab31"
+        android:background="@color/transparan"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/nameTxt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgVi6"
+        android:layout_margin="16dp"
+        android:text="1. My name is Sonia. ___ love my family. "
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Linsatu"
+        android:layout_below="@+id/nameTxt9">
+        <ImageButton
+            android:id="@+id/imgVi7"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/nameTxt9"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:src="@drawable/a"
+            android:onClick="playJawaban1"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:layout_margin="16dp"
+            android:textSize="10pt"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linsatu"
+        android:id="@+id/lindua">
+        <ImageButton
+            android:id="@+id/imgVi8"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgVi7"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:src="@drawable/b"
+            android:onClick="playJawaban1"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Me"
+            android:layout_margin="16dp"
+            android:textSize="10pt"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgVi66"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lintiga"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparan"
+        android:clickable="true"
+        android:onClick="playJawaban2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bab32" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lindua"
+        android:id="@+id/lintiga"
+        android:paddingBottom="10dp">
+        <ImageButton
+            android:id="@+id/imgVi9"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgVi8"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:src="@drawable/c"
+            android:onClick="playJawaban1"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="She"
+            android:layout_margin="16dp"
+            android:textSize="10pt"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameTxt10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgVi66"
+        android:layout_margin="16dp"
+        android:text="2. Super Birds flap ___ wings."
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Linsatua"
+        android:layout_below="@+id/nameTxt10">
+        <ImageButton
+            android:id="@+id/imgVi10"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/nameTxt10"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:src="@drawable/a"
+            android:onClick="playJawaban2"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It"
+            android:layout_margin="16dp"
+            android:textSize="10pt"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linsatua"
+        android:id="@+id/linduaa">
+        <ImageButton
+            android:id="@+id/imgVi11"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgVi10"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:src="@drawable/b"
+            android:onClick="playJawaban2"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Their "
+            android:layout_margin="16dp"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linduaa"
+        android:id="@+id/lintigaa"
+        android:paddingBottom="10dp">
+        <ImageButton
+            android:id="@+id/imgVi12"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgVi11"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:src="@drawable/c"
+            android:onClick="playJawaban2"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="He"
+            android:layout_margin="16dp"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <!--================-->
+    <ImageButton
+        android:id="@+id/imgVi66a"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lintigaa"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparan"
+        android:clickable="true"
+        android:onClick="playJawaban3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bab33" />
+    <TextView
+        android:id="@+id/nameTxt10c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgVi66a"
+        android:layout_margin="16dp"
+        android:text="3. She is a good painter. This painting is ___ . "
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Linsatuac"
+        android:layout_below="@+id/nameTxt10c">
+        <ImageButton
+            android:id="@+id/imgVi10c"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/nameTxt10c"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:src="@drawable/a"
+            android:onClick="playJawaban3"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="His"
+            android:layout_margin="16dp"
+            android:textSize="10pt"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linsatuac"
+        android:id="@+id/linduaac">
+        <ImageButton
+            android:id="@+id/imgVi11c"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgVi10c"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:src="@drawable/b"
+            android:onClick="playJawaban3"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Her "
+            android:layout_margin="16dp"
+            android:textSize="10pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linduaac"
+        android:id="@+id/lintigaac"
+        android:paddingBottom="20dp">
+        <ImageButton
+            android:id="@+id/imgVi12c"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgVi11c"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:src="@drawable/c"
+            android:onClick="playJawaban3"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hers"
+            android:layout_margin="16dp"
+            android:textSize="10pt" />
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

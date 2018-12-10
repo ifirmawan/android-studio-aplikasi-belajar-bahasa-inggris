@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quissimple1"
+    android:background="@color/white">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvHead1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="16dp"
+        android:text="Simple Quiz"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvSubHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHead1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="fill in the blanks by listening to the song below"
+        android:textSize="18sp" />
+    <!--suara soal 1 dan 2-->
+    <ImageButton
+        android:id="@+id/ibSuara"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvSubHead"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparan"
+        android:clickable="true"
+        android:onClick="playJawaban"
+        android:scaleType="centerCrop"
+        android:src="@drawable/qui1a" />
+    <!--soal nomor 1-->
+    <TextView
+        android:id="@+id/tvSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibSuara"
+        android:layout_margin="16dp"
+        android:text="1. Pulling your puzzles apart, _____ of science, science and progress."
+        android:textSize="16sp" />
+    <!--pilihan A-->
+    <LinearLayout
+        android:id="@+id/Linsatu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSatu">
+
+        <ImageButton
+            android:id="@+id/imgVi7"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tvSatu"
+            android:layout_margin="15dp"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:onClick="playJawaban"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Questions"
+            android:textSize="8pt" />
+
+    </LinearLayout>
+    <!--Pilihan B-->
+    <LinearLayout
+        android:id="@+id/lindua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linsatu"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="574dp">
+
+        <ImageButton
+            android:id="@+id/imgVi8"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgVi7"
+            android:layout_margin="16dp"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:onClick="playJawaban"
+            android:scaleType="centerCrop"
+            android:src="@drawable/b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Guessing"
+            android:textSize="8pt" />
+    </LinearLayout>
+    <!--Pilihan C-->
+    <LinearLayout
+        android:id="@+id/lintiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lindua"
+        android:paddingBottom="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="642dp">
+
+        <ImageButton
+            android:id="@+id/imgVi9"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgVi8"
+            android:layout_margin="16dp"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:onClick="playJawaban"
+            android:scaleType="centerCrop"
+            android:src="@drawable/c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Numbers"
+            android:textSize="8pt" />
+    </LinearLayout>
+    <!--Soal nomor 2-->
+    <TextView
+        android:id="@+id/nameTxt10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lintiga"
+        android:layout_margin="16dp"
+        android:text="2. Do not speak _____ my heart."
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="480dp" />
+    <!--Pilihan A-->
+    <LinearLayout
+        android:id="@+id/Linsatua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTxt10">
+
+        <ImageButton
+            android:id="@+id/imgVi10"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/nameTxt10"
+            android:layout_margin="16dp"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:onClick="playJawaban"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Louds"
+            android:textSize="8pt" />
+
+    </LinearLayout>
+    <!--Pilihan b-->
+    <LinearLayout
+        android:id="@+id/linduaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linsatua">
+
+        <ImageButton
+            android:id="@+id/imgVi11"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgVi10"
+            android:layout_margin="16dp"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:onClick="playJawaban"
+            android:scaleType="centerCrop"
+            android:src="@drawable/b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="As Loud "
+            android:textSize="8pt" />
+    </LinearLayout>
+    <!--Pilihan c-->
+    <LinearLayout
+        android:id="@+id/lintigaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linduaa"
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/imgVi12"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgVi11"
+            android:layout_margin="16dp"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:onClick="playJawaban"
+            android:scaleType="centerCrop"
+            android:src="@drawable/c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="As Loud As"
+            android:textSize="8pt" />
+        <!---->
+    </LinearLayout>
+    <!--Soal nomor 3 -->
+    <ImageButton
+        android:id="@+id/ibSuara2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lintigaa"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparan"
+        android:clickable="true"
+        android:onClick="playJawabanc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/qui1a" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTiga"
+        android:layout_below="@id/ibSuara2"
+        android:layout_margin="16dp"
+        android:text="3. _______"
+        android:textSize="16sp" />
+    <!--Pilihan A-->
+    <LinearLayout
+        android:id="@+id/Linsatub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTiga">
+
+        <ImageButton
+            android:id="@+id/imgVi10b"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tvTiga"
+            android:layout_margin="16dp"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:onClick="playJawabanc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Louds"
+            android:textSize="8pt" />
+
+    </LinearLayout>
+    <!--Pilihan b-->
+    <LinearLayout
+        android:id="@+id/linduab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linsatub">
+
+        <ImageButton
+            android:id="@+id/imgVi11b"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/Linsatub"
+            android:layout_margin="16dp"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:onClick="playJawabanc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="As Loud "
+            android:textSize="8pt" />
+    </LinearLayout>
+    <!--Pilihan c-->
+    <LinearLayout
+        android:id="@+id/lintigab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linduab"
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/imgVi12b"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/linduab"
+            android:layout_margin="16dp"
+            android:background="@color/transparan"
+            android:clickable="true"
+            android:onClick="playJawabanc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="As Loud As"
+            android:textSize="8pt" />
+        <!---->
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

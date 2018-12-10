@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz.HasilQuiz"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/pict1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logobbi"/>
+    <TextView
+        android:layout_below="@+id/pict1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvteks0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:paddingTop="30dp"
+        android:text="Hello "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvteks"
+        android:layout_below="@+id/tvteks0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        android:text="Your Score is: "/>
+    <TextView
+        android:id="@+id/tvhighscore"
+        android:layout_below="@id/tvteks"
+        android:layout_width="match_parent"
+        android:paddingTop="0dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="75sp"
+        android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpload"
+            android:layout_below="@+id/tvhighscore"
+            android:background="@drawable/mybutton"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="Send My Score"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/score"-->
+            <!--android:layout_below="@+id/tvhighscore"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="#1b475c"-->
+            <!--android:textSize="28sp" />-->
+
+    <LinearLayout
+       android:layout_width="match_parent"
+        android:layout_below="@+id/tvPenjelasan"
+        android:layout_height="wrap_content"
+        android:id="@+id/Linincorrect"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incorrect                       :"
+            android:textColor="#e9403d"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e9403d"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/Linincorrect"
+        android:id="@+id/LinCorrect">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct                          :"
+            android:textColor="#51b364"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#51b364"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/you"
+            android:layout_below="@+id/Linincorrect"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#4953b1"
+            android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPenjelasan"
+        android:layout_below="@+id/btnUpload"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:text="Explaination "
+        android:textColor="@color/biru"
+        android:onClick="penjelasan"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHome"
+        android:layout_below="@+id/LinCorrect"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="20dp"
+        android:text="Exit"
+        android:textColor="@color/biru"
+        android:onClick="home"/>
+
+    </RelativeLayout>
+</ScrollView>
