@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_bar"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    android:layout_height="160dp"
+    android:layout_width="match_parent"
+    android:background="@color/text"
+    android:layout_gravity=""
+    android:overScrollMode="never"
+    card_view:cardBackgroundColor="@color/bg"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/progresScore"
+                app:rcBackgroundColor="@color/white"
+                app:rcBackgroundPadding="2dp"
+                app:rcIconBackgroundColor="@color/custom_progress_green_header"
+                app:rcIconPadding="3dp"
+                app:rcIconSize="30dp"
+                app:rcIconSrc="@drawable/ic_star_black_star"
+                app:rcMax="10"
+                app:rcProgressColor="@color/custom_progress_green_progress"
+                app:rcRadius="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBenar"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/benar"
+                android:textColor="@color/background_dark"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSalah"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/salah"
+                android:textColor="@color/background_dark"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvTingkat"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/kesulitan"
+                android:textColor="@color/background_dark"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
