@@ -80,5 +80,6 @@ public class HasilQuiz extends AppCompatActivity {
     public void onBackPressed(){
         Intent intentTentang = new Intent(HasilQuiz.this, MainActivity.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
         startActivity(intentTentang);
+        this.finish();
     }
 }

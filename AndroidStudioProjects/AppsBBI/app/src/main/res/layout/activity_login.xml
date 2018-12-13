@@ -79,7 +79,7 @@
             android:background="@drawable/shapeemail"
             android:drawableLeft="@drawable/ic_person_black_24dp"
             android:drawablePadding="10dp"
-            android:hint="User Nama"
+            android:hint="Username"
             android:textColor="@color/hitam"
             android:textColorHint="@color/hitam"
             android:textColorHighlight="@color/hitam"/>

@@ -32,8 +32,12 @@ public class SplashActivity extends Activity {
 
             private void finish() {
                 // TODO Auto-generated method stub
+//                Intent i = new Intent(SplashActivity.this, LoginActivity.class);
+//                startActivity(i);
+//                //jeda selesai Splashscreen
+//                finish();
             }
         }, splashInterval);
-
+//        this.finish();
     };
 }

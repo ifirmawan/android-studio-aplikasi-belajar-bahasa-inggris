@@ -8,7 +8,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_fix"
         android:label="@string/app_name"
         android:permission=""
         android:supportsRtl="true"
@@ -16,6 +16,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".MainActivity"
+            android:noHistory="true"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
 
@@ -73,7 +74,8 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".Quiz.QuizActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".SplashActivity"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

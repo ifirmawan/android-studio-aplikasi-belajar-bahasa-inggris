@@ -18,7 +18,7 @@ import com.example.derysudrajat.appsbbi.Quiz.QuizActivity;
 
 public class QuizFragment extends Fragment {
     String[] docs={"Quiz 1","Quiz 2","Quiz 3"};
-    String[] qty ={"10 Soal","10 Soal","10 Soal"};
+    String[] qty ={"10 Soal","20 Soal","30 Soal"};
     String[] dificult ={"Easy","Medium","Hard"};
     int[] img={R.drawable.easy,R.drawable.medium,R.drawable.hard};
     Class[] quiz={QuizActivity.class,QuizActivity.class,QuizActivity.class,};

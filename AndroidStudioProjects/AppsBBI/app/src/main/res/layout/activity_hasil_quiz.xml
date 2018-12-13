@@ -46,33 +46,25 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:id="@+id/btnUpload"
-            android:layout_below="@+id/tvhighscore"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/LinCorrect"
             android:background="@drawable/mybutton"
             android:layout_centerHorizontal="true"
             android:textColor="@color/white"
             android:text="Send My Score"/>
 
-        <!--<TextView-->
-            <!--android:id="@+id/score"-->
-            <!--android:layout_below="@+id/tvhighscore"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="20dp"-->
-            <!--android:textAlignment="center"-->
-            <!--android:textColor="#1b475c"-->
-            <!--android:textSize="28sp" />-->
-
     <LinearLayout
        android:layout_width="match_parent"
-        android:layout_below="@+id/tvPenjelasan"
+        android:layout_below="@+id/tvhighscore"
         android:layout_height="wrap_content"
         android:id="@+id/Linincorrect"
-        android:padding="10dp">
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Incorrect                       :"
+            android:text="Incorrect         :"
             android:textColor="#e9403d"
             android:textSize="20sp" />
 
@@ -89,12 +81,14 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_below="@+id/Linincorrect"
-        android:id="@+id/LinCorrect">
+        android:id="@+id/LinCorrect"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="50dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correct                          :"
+            android:text="Correct            :"
             android:textColor="#51b364"
             android:textSize="20sp" />
 
@@ -105,16 +99,6 @@
             android:textColor="#51b364"
             android:textSize="20sp" />
     </LinearLayout>
-
-        <TextView
-            android:id="@+id/you"
-            android:layout_below="@+id/Linincorrect"
-            android:layout_marginTop="50dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textColor="#4953b1"
-            android:textSize="24sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -131,7 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tvHome"
-        android:layout_below="@+id/LinCorrect"
+        android:layout_below="@+id/tvPenjelasan"
         android:textAlignment="center"
         android:textSize="15sp"
         android:paddingTop="5dp"
@@ -139,6 +123,5 @@
         android:text="Exit"
         android:textColor="@color/biru"
         android:onClick="home"/>
-
     </RelativeLayout>
 </ScrollView>

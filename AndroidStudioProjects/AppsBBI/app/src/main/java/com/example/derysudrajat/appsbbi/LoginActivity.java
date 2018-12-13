@@ -1,8 +1,10 @@
 package com.example.derysudrajat.appsbbi;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
@@ -38,26 +40,26 @@ public class LoginActivity extends Activity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               Auth a = new Auth(getApplicationContext(), new User(etUname.getText().toString(), etPassword.getText().toString()), new Status() {
+                Auth a = new Auth(getApplicationContext(), new User(etUname.getText().toString(), etPassword.getText().toString()), new Status() {
                     @Override
                     public void onLoginDone(User user) {
                         STATICUSER.USER = user;
 
-                        Toast.makeText(getBaseContext(),"Hello " + user.getNama(), Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(getBaseContext(),MainActivity.class));
+                        Toast.makeText(getBaseContext(), "Hello " + user.getNama(), Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(getBaseContext(), MainActivity.class));
                         finish();
                     }
                 });
                 a.login();
             }
         });
-tvRegister.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        startActivity(new Intent(getBaseContext(),RegisterActivity.class));
+        tvRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getBaseContext(), RegisterActivity.class));
 
-    }
-});
+            }
+        });
         cbShow.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
@@ -73,5 +75,26 @@ tvRegister.setOnClickListener(new View.OnClickListener() {
         });
     }
 
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to exit?")
+                .setCancelable(false)
+                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+//                  finish();
+                        LoginActivity.super.onBackPressed();
+                    }
+                })
+                .setNegativeButton("no", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+                        dialogInterface.cancel();
+                    }
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+    }
 }
 

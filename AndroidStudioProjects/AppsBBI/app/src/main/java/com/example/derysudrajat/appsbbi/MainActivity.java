@@ -1,10 +1,14 @@
 package com.example.derysudrajat.appsbbi;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
@@ -23,8 +27,8 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
         bottomNavigation = findViewById(R.id.myBottomNavigation_ID);
         bottomNavigation.setOnTabSelectedListener(this);
         this.createNavItems();
-        TextView hello = (TextView) findViewById(R.id.hello);
-        TextView namaLengkap = (TextView) findViewById(R.id.namaLengkap);
+        TextView hello = findViewById(R.id.hello);
+        TextView namaLengkap =  findViewById(R.id.namaLengkap);
         hello.setText("HELLO");
 
         namaLengkap.setText(STATICUSER.USER.getNama());
@@ -62,5 +66,37 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
             ScoreFragment scoreFragment = new ScoreFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.content_id, scoreFragment).commit();
         }
+    }
+//    public void onBackPressed() {
+//        new AlertDialog.Builder(this)
+//                .setMessage("Are you sure you want to exit?")
+//                .setCancelable(false)
+//                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int id) {
+//                        MainActivity.this.finish();
+//                    }
+//                })
+//                .setNegativeButton("No", null)
+//                .show();
+//    }
+    public void onBackPressed() {
+    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    builder.setMessage("Are you sure you want to exit?")
+            .setCancelable(false)
+            .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int which) {
+//                  finish();
+                    MainActivity.super.onBackPressed();
+                }
+            })
+            .setNegativeButton("no", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int which) {
+                    dialogInterface.cancel();
+                }
+            });
+    AlertDialog alertDialog = builder.create();
+    alertDialog.show();
     }
 }
