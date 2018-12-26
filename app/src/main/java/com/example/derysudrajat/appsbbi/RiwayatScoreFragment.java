@@ -1,5 +1,6 @@
 package com.example.derysudrajat.appsbbi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -22,5 +23,9 @@ public class RiwayatScoreFragment extends AppCompatActivity {
         rv.setAdapter(riwayatAdapter);
     }
 
-
+    public void onBackPressed() {
+        Intent i = new Intent(RiwayatScoreFragment.this, MainActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(i);
+    }
 }

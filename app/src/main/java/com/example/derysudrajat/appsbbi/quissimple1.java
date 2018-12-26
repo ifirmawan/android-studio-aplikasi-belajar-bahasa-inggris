@@ -105,5 +105,6 @@ public class quissimple1 extends AppCompatActivity {
     public void onBackPressed(){
         Intent intentTentang = new Intent(quissimple1.this, MainActivity.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
         startActivity(intentTentang);
+        finish();
     }
 }

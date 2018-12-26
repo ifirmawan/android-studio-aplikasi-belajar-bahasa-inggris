@@ -1,8 +1,10 @@
 package com.example.derysudrajat.appsbbi;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
@@ -60,5 +62,10 @@ public class IsiMateri3 extends AppCompatActivity {
     {
         Intent intentTentang = new Intent(IsiMateri3.this, quissimple3.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
         startActivity(intentTentang);
+    }
+    public void onBackPressed() {
+        Intent i = new Intent(IsiMateri3.this, MainActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(i);
     }
 }

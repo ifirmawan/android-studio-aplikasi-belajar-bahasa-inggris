@@ -88,6 +88,8 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
                 public void onClick(DialogInterface dialogInterface, int which) {
 //                  finish();
                     MainActivity.super.onBackPressed();
+
+
                 }
             })
             .setNegativeButton("no", new DialogInterface.OnClickListener() {

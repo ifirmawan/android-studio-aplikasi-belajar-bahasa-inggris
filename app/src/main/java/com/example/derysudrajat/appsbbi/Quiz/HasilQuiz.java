@@ -74,12 +74,16 @@ public class HasilQuiz extends AppCompatActivity {
         TextView tv=  findViewById(R.id.tvHome);
         tv.setText("Exit");
         Intent intentTentang = new Intent(HasilQuiz.this, MainActivity.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
+        //menggunakan set Flags, untuk menandakan keadaan saat itu, misalkan act
+        intentTentang.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intentTentang);
+        //finish();
     }
     @Override
     public void onBackPressed(){
         Intent intentTentang = new Intent(HasilQuiz.this, MainActivity.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
+        intentTentang.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intentTentang);
-        this.finish();
+       // finish();
     }
 }

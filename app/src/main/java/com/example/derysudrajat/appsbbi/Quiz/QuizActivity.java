@@ -15,6 +15,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.derysudrajat.appsbbi.MainActivity;
 import com.example.derysudrajat.appsbbi.MyAdapter;
 import com.example.derysudrajat.appsbbi.Quiz.Model.Penjelasan;
 import com.example.derysudrajat.appsbbi.R;
@@ -158,6 +159,7 @@ public class QuizActivity extends AppCompatActivity {
             setResult(RESULT_OK, i);
             startActivityForResult(i, REQUEST_CODE_QUIZ);
             startActivity(i);
+            finish();
         }
     }
 
@@ -275,7 +277,10 @@ public class QuizActivity extends AppCompatActivity {
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             finishQuiz();
         } else {
-            Toast.makeText(this, "Press back again to finish", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Press back again to finish", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(QuizActivity.this, MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(i);
         }
 
         backPressedTime = System.currentTimeMillis();
