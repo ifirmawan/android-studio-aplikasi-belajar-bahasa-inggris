@@ -1,7 +1,7 @@
 package com.example.derysudrajat.appsbbi.Quiz.Model;
 
 public class User {
-    private String username, password, nama;
+    private String username, password, nama,user_id;
 
     public User() {
         }
@@ -38,5 +38,13 @@ public class User {
 
     public void setNama(String nama) {
         this.nama = nama;
+    }
+
+    public String getUserID() {
+        return user_id;
+    }
+
+    public void setUserID(String user_id) {
+        this.user_id = user_id;
     }
 }
