@@ -2,6 +2,7 @@ package com.example.derysudrajat.appsbbi.Quiz.Network;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -48,6 +49,7 @@ public class Auth {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
                 Log.e("COBALOGIN",error.getMessage());
                 errorMessage = error.getMessage();
 
@@ -71,7 +73,7 @@ public class Auth {
         StringRequest s = new StringRequest(Request.Method.POST, URL_REGISTER, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Log.d("COBALOGIN",response);
+                Log.d("COBALOGIN onResponse",response);
                 User u = new ResponseParser(response).getParsedResponse();
                 if (u!=null){
                     statusListener.onLoginDone(u);}
@@ -79,7 +81,7 @@ public class Auth {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.e("COBALOGIN",error.getMessage());
+                Log.e("COBALOGIN onError",error.getMessage());
                 errorMessage = error.getMessage();
 
 
@@ -111,7 +113,8 @@ public class Auth {
                 user.setUsername(jsonObject.getString("username"));
                 return  user;
             }catch(JSONException jso){
-                Log.e("COBALOGIN",jso.getMessage());
+                Toast.makeText(context,"Username or Password is Incorrect",Toast.LENGTH_SHORT).show();
+                Log.e("COBALOGIN ResponsePar",jso.getMessage());
             return null;
             }
 

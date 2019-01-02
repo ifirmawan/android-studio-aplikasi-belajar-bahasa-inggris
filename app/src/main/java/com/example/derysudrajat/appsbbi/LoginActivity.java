@@ -37,22 +37,29 @@ public class LoginActivity extends Activity {
         btnLogin = findViewById(R.id.btnLogin);
         tvRegister = findViewById(R.id.tvRegister);
         cbShow = findViewById(R.id.cbShow);
+        etUname.setError("Username must be filled in");
+        etPassword.setError("Password must be filled in");
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Auth a = new Auth(getApplicationContext(), new User(etUname.getText().toString(), etPassword.getText().toString()), new Status() {
-                    @Override
-                    public void onLoginDone(User user) {
-                        STATICUSER.USER = user;
-
-                        Toast.makeText(getBaseContext(), "Hello " + user.getNama(), Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(getBaseContext(), MainActivity.class));
-                        finish();
-                    }
-                });
-                a.login();
+//                if (etUname.getText().toString().equals(etPassword.getText().toString())) {
+                    Auth a = new Auth(getApplicationContext(), new User(etUname.getText().toString(), etPassword.getText().toString()), new Status() {
+                        @Override
+                        public void onLoginDone(User user) {
+                            STATICUSER.USER = user;
+                            Toast.makeText(getBaseContext(), "Hello " + user.getNama(), Toast.LENGTH_LONG).show();
+                            startActivity(new Intent(getBaseContext(), MainActivity.class));
+                            finish();
+                        }
+                    });
+                    a.login();
+//                } else {
+//                    Toast.makeText(getBaseContext(), "Username or Password is Wrong", Toast.LENGTH_SHORT).show();
+//                }
             }
         });
+
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

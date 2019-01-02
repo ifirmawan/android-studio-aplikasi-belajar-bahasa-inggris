@@ -1,5 +1,6 @@
 package com.example.derysudrajat.appsbbi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
@@ -10,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -23,7 +25,7 @@ public class MateriFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView=inflater.inflate(R.layout.main_fragment,container,false);
         RecyclerView rv= rootView.findViewById(R.id.mainRV);
@@ -32,6 +34,7 @@ public class MateriFragment extends Fragment {
         initCollapsingToolbar();
         MyAdapter adapter=new MyAdapter(this.getActivity(),title,tema,img,materi);
         rv.setAdapter(adapter);
+
 
         return rootView;
     }
