@@ -21,10 +21,10 @@ public class Auth {
 
     private User user;
     private Status statusListener;
-    private final String BASE_URL = "http://bbi.rendyandriyanto.com";
+    private final String BASE_URL = "http://192.168.43.80/bbi";
     private final String URL_LOGIN = BASE_URL+"/login.php";
     private final  String URL_REGISTER = BASE_URL+"/register.php";
-    private final  String URL_HIGHSCORE = BASE_URL+"/soal.php";
+
     private String errorMessage;
     public User getUser() {
         return user;
@@ -111,6 +111,7 @@ public class Auth {
                 User user = new User();
                 user.setNama(jsonObject.getString("nama"));
                 user.setUsername(jsonObject.getString("username"));
+                user.setUserID(jsonObject.getString("id"));
                 return  user;
             }catch(JSONException jso){
                 Toast.makeText(context,"Username or Password is Incorrect",Toast.LENGTH_SHORT).show();

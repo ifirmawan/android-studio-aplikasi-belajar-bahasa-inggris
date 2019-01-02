@@ -1,17 +1,24 @@
 package com.example.derysudrajat.appsbbi.Quiz;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.derysudrajat.appsbbi.MainActivity;
 import com.example.derysudrajat.appsbbi.PembahasanActivity;
+import com.example.derysudrajat.appsbbi.Quiz.Network.STATICUSER;
+import com.example.derysudrajat.appsbbi.Quiz.Network.ServerProcessClass;
 import com.example.derysudrajat.appsbbi.R;
+
+import java.util.HashMap;
 
 public class HasilQuiz extends AppCompatActivity {
 //    TextView correct, incorrect, attempted, score, you;
@@ -27,6 +34,9 @@ public class HasilQuiz extends AppCompatActivity {
     private TextView tvHighscore, tvPenjelasan, tvHome,tvIncorrect,tvCorrect;
 
     private int highscore;
+    private final  String URL_SEND_HIGHSCORE = "http://192.168.43.80/bbi/send_highscore.php";
+    ProgressDialog progressDialog ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +54,60 @@ public class HasilQuiz extends AppCompatActivity {
         //Log.d("WEW", String.valueOf(score_wrong));
         updateHighscore(score);
 
+        Button btnUpload = (Button) findViewById(R.id.btnUpload);
+        btnUpload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SendHighscoreToServer();
+            }
+        });
     }
 
+    public void SendHighscoreToServer(){
+
+        class AsyncTaskUploadClass extends AsyncTask<Void,Void,String> {
+
+            @Override
+            protected void onPreExecute() {
+
+                super.onPreExecute();
+
+                progressDialog = ProgressDialog.show(HasilQuiz.this,"Highscore is Uploading","Please Wait",false,false);
+            }
+
+            @Override
+            protected void onPostExecute(String string1) {
+
+                super.onPostExecute(string1);
+
+                progressDialog.dismiss();
+
+                Toast.makeText(HasilQuiz.this,string1,Toast.LENGTH_LONG).show();
+
+
+            }
+
+            @Override
+            protected String doInBackground(Void... params) {
+
+                ServerProcessClass serverProcessClass = new ServerProcessClass();
+
+                HashMap<String,String> HashMapParams = new HashMap<String,String>();
+                SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+                highscore = prefs.getInt(KEY_HIGHSCORE, 0);
+
+                HashMapParams.put("user_id", String.valueOf(STATICUSER.USER.getUserID()));
+                HashMapParams.put("highscore", String.valueOf(highscore));
+
+                String FinalData = serverProcessClass.ServerHttpRequest(URL_SEND_HIGHSCORE, HashMapParams);
+
+                return FinalData;
+            }
+        }
+        AsyncTaskUploadClass AsyncTaskUploadClassOBJ = new AsyncTaskUploadClass();
+        AsyncTaskUploadClassOBJ.execute();
+
+    }
 
     private void loadHighscore() {
         SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);

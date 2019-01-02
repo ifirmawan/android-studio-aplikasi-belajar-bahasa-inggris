@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
         TextView namaLengkap =  findViewById(R.id.namaLengkap);
         hello.setText("HELLO");
 
-        namaLengkap.setText(STATICUSER.USER.getNama());
+        namaLengkap.setText(STATICUSER.USER.getUserID());
     }
 
     private void createNavItems() {
