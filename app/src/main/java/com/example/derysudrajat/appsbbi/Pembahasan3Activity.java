@@ -11,9 +11,10 @@ public class Pembahasan3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pembahasan3);
     }
-    public void onBackPressed(){
-        Intent intentTentang = new Intent(Pembahasan3Activity.this, MainActivity.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
-        startActivity(intentTentang);
+    public void onBackPressed() {
+        Intent i = new Intent(Pembahasan3Activity.this, MainActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(i);
     }
 }
 
