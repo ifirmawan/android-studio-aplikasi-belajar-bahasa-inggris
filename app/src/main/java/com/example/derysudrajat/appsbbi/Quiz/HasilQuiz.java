@@ -34,7 +34,7 @@ public class HasilQuiz extends AppCompatActivity {
     private TextView tvHighscore, tvPenjelasan, tvHome,tvIncorrect,tvCorrect;
 
     private int highscore;
-    private final  String URL_SEND_HIGHSCORE = "http://192.168.43.80/bbi/send_highscore.php";
+    private final  String URL_SEND_HIGHSCORE = "http://bbi.rendyandriyanto.com/send_highscore.php";
     ProgressDialog progressDialog ;
 
     @Override

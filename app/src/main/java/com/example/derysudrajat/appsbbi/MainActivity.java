@@ -29,9 +29,8 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
         this.createNavItems();
         TextView hello = findViewById(R.id.hello);
         TextView namaLengkap =  findViewById(R.id.namaLengkap);
-        hello.setText("HELLO");
-
-        namaLengkap.setText(STATICUSER.USER.getUserID());
+        hello.setText("Hello,");
+        namaLengkap.setText(STATICUSER.USER.getNama());
     }
 
     private void createNavItems() {
@@ -67,18 +66,7 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
             getSupportFragmentManager().beginTransaction().replace(R.id.content_id, scoreFragment).commit();
         }
     }
-//    public void onBackPressed() {
-//        new AlertDialog.Builder(this)
-//                .setMessage("Are you sure you want to exit?")
-//                .setCancelable(false)
-//                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        MainActivity.this.finish();
-//                    }
-//                })
-//                .setNegativeButton("No", null)
-//                .show();
-//    }
+
     public void onBackPressed() {
     AlertDialog.Builder builder = new AlertDialog.Builder(this);
     builder.setMessage("Are you sure you want to exit?")

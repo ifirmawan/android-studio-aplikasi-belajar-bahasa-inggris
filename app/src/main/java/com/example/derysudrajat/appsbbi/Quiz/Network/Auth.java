@@ -21,7 +21,7 @@ public class Auth {
 
     private User user;
     private Status statusListener;
-    private final String BASE_URL = "http://192.168.43.80/bbi";
+    private final String BASE_URL =  "http://bbi.rendyandriyanto.com";
     private final String URL_LOGIN = BASE_URL+"/login.php";
     private final  String URL_REGISTER = BASE_URL+"/register.php";
 
@@ -73,7 +73,7 @@ public class Auth {
         StringRequest s = new StringRequest(Request.Method.POST, URL_REGISTER, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Log.d("COBALOGIN onResponse",response);
+                Log.d("COBADAFTAR onResponse",response);
                 User u = new ResponseParser(response).getParsedResponse();
                 if (u!=null){
                     statusListener.onLoginDone(u);}
@@ -81,7 +81,7 @@ public class Auth {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.e("COBALOGIN onError",error.getMessage());
+                Log.e("COBADAFTAR onError",error.getMessage());
                 errorMessage = error.getMessage();
 
 
@@ -94,12 +94,14 @@ public class Auth {
                 params.put("username", user.getUsername());
                 params.put("password",user.getPassword());
                 params.put("nama",user.getNama());
+                params.put("asal_sekolah", user.getAsal_sekolah());
                 return params;
             }
         };
         MySingleton.getInstance(context).addToRequestQueue(s);
 
     }
+
     class ResponseParser{
         private String response;
         public ResponseParser(String re){
@@ -112,6 +114,7 @@ public class Auth {
                 user.setNama(jsonObject.getString("nama"));
                 user.setUsername(jsonObject.getString("username"));
                 user.setUserID(jsonObject.getString("id"));
+                user.setAsal_sekolah(jsonObject.getString("asal_sekolah"));
                 return  user;
             }catch(JSONException jso){
                 Toast.makeText(context,"Username or Password is Incorrect",Toast.LENGTH_SHORT).show();
