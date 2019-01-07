@@ -82,8 +82,10 @@ public class HasilQuiz extends AppCompatActivity {
 
                 progressDialog.dismiss();
 
-                Toast.makeText(HasilQuiz.this,string1,Toast.LENGTH_LONG).show();
-
+                //Toast.makeText(HasilQuiz.this,string1,Toast.LENGTH_LONG).show();
+                Intent i = new Intent(HasilQuiz.this,HasilQuizBaru.class);
+                //i.putExtra("user_id",String.valueOf(STATICUSER.USER.getUserID()));
+                startActivity(i);
 
             }
 
