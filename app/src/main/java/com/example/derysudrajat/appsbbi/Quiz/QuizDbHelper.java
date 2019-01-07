@@ -109,44 +109,45 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         addQuestion(q10b);
 
 
-        Question q11 = new Question("Why do you prefer London to Madrid? I think London is a lot ___ to live.",
-                "A. Nice", "B. Nicer", "C. Nicest","D. The Nicest", 2, Question.DIFFICULTY_MEDIUM);
+        Question q11 = new Question("Choose the right pronoun to correctly finish this sentence:\n" +
+                "_________ need to follow me closely.",
+                "A. You", "B. He", "C. She","D. It", 1, Question.DIFFICULTY_MEDIUM);
 //                "A", "B", "C", 2, Question.DIFFICULTY_MEDIUM);
         addQuestion(q11);
-        Question q12 = new Question("This ice cream is so ___. It's the best in town.",
-                "A. Good", "B. Better", "C. The Best", "D.  Best",1, Question.DIFFICULTY_MEDIUM);
+        Question q12 = new Question("Lewis, Luke and Thomas were cross because ________ had waited ages for the bus.",
+                "A. Them", "B. He", "C. They", "D.  It",3, Question.DIFFICULTY_MEDIUM);
 //                "A", "B", "C",3, Question.DIFFICULTY_MEDIUM);
         addQuestion(q12);
-        Question q13 = new Question("Which sentence has no mistakes?",
-                "A. Yesterday was more hotter than today.", "B. I am more intelligent then my brother.", "C. My mother isn't as taller as my father.", "D. Ankara is more crowded than Amasya.",4, Question.DIFFICULTY_MEDIUM);
+        Question q13 = new Question("Palvinder watched the children carefully as _________ crossed the road.?",
+                "A. Them", "B. Him", "C. They", "D. Us",3, Question.DIFFICULTY_MEDIUM);
 //                "A", "B", "C",1, Question.DIFFICULTY_MEDIUM);
         addQuestion(q13);
-        Question q14 = new Question("She loves the man",
-                "A. Kapan dia pergi?", "B. Dia bersamamu", "C. Dia mencintai pria itu","D. Dia menanyakan kabarmu", 3, Question.DIFFICULTY_MEDIUM);
+        Question q14 = new Question("Hold the bag please while I put the shopping in ________ .",
+                "A. Him", "B. It", "C. She","D. I", 2, Question.DIFFICULTY_MEDIUM);
 //                "A", "B", "C", 3, Question.DIFFICULTY_MEDIUM);
         addQuestion(q14);
-        Question q15 = new Question("Today I read",
-                "A. Hari ini saya membaca", "B. Hari ini saya menulis", "C. Hari ini saya bermain", "D. Hari ini saya bekerja",1, Question.DIFFICULTY_MEDIUM);
+        Question q15 = new Question("Melanie and I are going soon so you can come with _________ .",
+                "A. We", "B. Them", "C. They", "D. Us",4, Question.DIFFICULTY_MEDIUM);
 //                "A", "B", "C",1, Question.DIFFICULTY_MEDIUM);
         addQuestion(q15);
-        Question q16 = new Question("My color is pink",
-                "A. Warna saya merah", "B. Warna saya biru", "C. Warna saya merah muda","D. Warna saya hijau", 3, Question.DIFFICULTY_MEDIUM);
+        Question q16 = new Question("Thank you for collecting ________ .",
+                "A. Me", "B. He", "C. She","D. They", 1, Question.DIFFICULTY_MEDIUM);
 //                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q16);
-        Question q17 = new Question("I cook rice",
-                "A. Saya memasak kentang", "B. Saya memasak nasi", "C. Saya memasak talas","D. Saya memasak mie", 2, Question.DIFFICULTY_MEDIUM);
+        Question q17 = new Question("I wonder why Geoff rushed off. Did you upset _______ ?",
+                "A. He", "B. Him", "C. We","D. They", 2, Question.DIFFICULTY_MEDIUM);
 //                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q17);
-        Question q18 = new Question("I have a question",
-                "A. Saya punya sebuah balon", "B. Saya punya sebuah permen", "C. Saya punya sebuah pernyataan","D. Saya punya sebuah pertanyaan", 4, Question.DIFFICULTY_MEDIUM);
+        Question q18 = new Question("_______ hope those flowers are for me.",
+                "A. We", "B. Them", "C. I","D. Him", 3, Question.DIFFICULTY_MEDIUM);
 //                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q18);
-        Question q19 = new Question("Generasi anda memakai topi",
-                " A. Your generation wears pants", "B Your generation wears cat", "C.  Your generation wears shoes","D. Your generation wears hat", 4, Question.DIFFICULTY_MEDIUM);
+        Question q19 = new Question("Open the door. It's ______ .",
+                " A. I", "B They", "C.  Me","D. She", 3, Question.DIFFICULTY_MEDIUM);
 //                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q19);
-        Question q20 = new Question("Dia menyukai kopi",
-                "A. She likes pants", "B. She likes shoes", "C. She likes tea","D. She likes coffe", 4, Question.DIFFICULTY_MEDIUM);
+        Question q20 = new Question("Sarah wanted Lisa to follow ________.",
+                "A. She", "B. They", "C. I","D. Her", 4, Question.DIFFICULTY_MEDIUM);
 //                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q20);
         Question q21 = new Question("My color is pink",
