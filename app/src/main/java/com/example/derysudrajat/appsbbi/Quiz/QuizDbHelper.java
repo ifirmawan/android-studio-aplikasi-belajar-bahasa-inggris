@@ -14,7 +14,7 @@ import static com.example.derysudrajat.appsbbi.Quiz.QuizContract.QuestionsTable.
 
 public class QuizDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "kuislusi.db";
-    private static final int DATABASE_VERSION = 7;
+    private static final int DATABASE_VERSION = 8;
 
     private SQLiteDatabase db;
 
@@ -105,215 +105,211 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         addQuestion(q10a);
         Question q10b = new Question("Ms. Charlotte reminded ____ to order tickets as soon as possible.",
                 "A. His", "B. Herself", "C. Her","D. She", 2, Question.DIFFICULTY_EASY);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
         addQuestion(q10b);
 
 
         Question q11 = new Question("Choose the right pronoun to correctly finish this sentence:\n" +
                 "_________ need to follow me closely.",
                 "A. You", "B. He", "C. She","D. It", 1, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 2, Question.DIFFICULTY_MEDIUM);
         addQuestion(q11);
+
         Question q12 = new Question("Lewis, Luke and Thomas were cross because ________ had waited ages for the bus.",
                 "A. Them", "B. He", "C. They", "D.  It",3, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C",3, Question.DIFFICULTY_MEDIUM);
         addQuestion(q12);
+
         Question q13 = new Question("Palvinder watched the children carefully as _________ crossed the road.?",
                 "A. Them", "B. Him", "C. They", "D. Us",3, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C",1, Question.DIFFICULTY_MEDIUM);
         addQuestion(q13);
+
         Question q14 = new Question("Hold the bag please while I put the shopping in ________ .",
                 "A. Him", "B. It", "C. She","D. I", 2, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_MEDIUM);
         addQuestion(q14);
+
         Question q15 = new Question("Melanie and I are going soon so you can come with _________ .",
                 "A. We", "B. Them", "C. They", "D. Us",4, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C",1, Question.DIFFICULTY_MEDIUM);
         addQuestion(q15);
+
         Question q16 = new Question("Thank you for collecting ________ .",
                 "A. Me", "B. He", "C. She","D. They", 1, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q16);
+
         Question q17 = new Question("I wonder why Geoff rushed off. Did you upset _______ ?",
                 "A. He", "B. Him", "C. We","D. They", 2, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q17);
+
         Question q18 = new Question("_______ hope those flowers are for me.",
                 "A. We", "B. Them", "C. I","D. Him", 3, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q18);
+
         Question q19 = new Question("Open the door. It's ______ .",
                 " A. I", "B They", "C.  Me","D. She", 3, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q19);
+
         Question q20 = new Question("Sarah wanted Lisa to follow ________.",
                 "A. She", "B. They", "C. I","D. Her", 4, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q20);
-        Question q21 = new Question("My color is pink",
-                "A. Warna saya merah", "B. Warna saya biru", "C. Warna saya merah muda","D. Warna saya hijau", 3, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
+        Question q21 = new Question(" She is senior _______ me by five years.",
+                "A. Than", "B. Of", "C. to","D. As", 3, Question.DIFFICULTY_MEDIUM);
         addQuestion(q21);
-        Question q22 = new Question("I cook rice",
-                "A. Saya memasak kentang", "B. Saya memasak nasi", "C. Saya memasak talas","D. Saya memasak mie", 2, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
+        Question q22 = new Question(" My job is superior _______ yours.",
+                "A. Than", "B. Of", "C. to","D. As", 3, Question.DIFFICULTY_MEDIUM);
         addQuestion(q22);
-        Question q23 = new Question("I have a question",
-                "A. Saya punya sebuah balon", "B. Saya punya sebuah permen", "C. Saya punya sebuah pernyataan","D. Saya punya sebuah pertanyaan", 4, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
+        Question q23 = new Question(" James is _______ his brother",
+                "A. Tallest of", "B. Taller Than", "C. Taller Then","D. Taller", 2, Question.DIFFICULTY_MEDIUM);
         addQuestion(q23);
-        Question q24 = new Question("Generasi anda memakai topi",
-                " A. Your generation wears pants", "B Your generation wears cat", "C.  Your generation wears shoes","D. Your generation wears hat", 4, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
+        Question q24 = new Question("She sings ______ as her sister",
+                " A. as best", "B. as well ", "C. Better","D. Good", 2, Question.DIFFICULTY_MEDIUM);
         addQuestion(q24);
-        Question q25 = new Question("Dia menyukai kopi",
-                "A. She likes pants", "B. She likes shoes", "C. She likes tea","D. She likes coffe", 4, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
+        Question q25 = new Question(" I earn as ______ money as you do.",
+                "A. Much", "B. More", "C. Much More","D. More Much", 1, Question.DIFFICULTY_MEDIUM);
         addQuestion(q25);
+
         Question q26 = new Question("My color is pink",
                 "A. Warna saya merah", "B. Warna saya biru", "C. Warna saya merah muda","D. Warna saya hijau", 3, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q26);
+
         Question q27 = new Question("I cook rice",
                 "A. Saya memasak kentang", "B. Saya memasak nasi", "C. Saya memasak talas","D. Saya memasak mie", 2, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q27);
+
         Question q28 = new Question("I have a question",
                 "A. Saya punya sebuah balon", "B. Saya punya sebuah permen", "C. Saya punya sebuah pernyataan","D. Saya punya sebuah pertanyaan", 4, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q28);
+
         Question q29 = new Question("Generasi anda memakai topi",
                 " A. Your generation wears pants", "B Your generation wears cat", "C.  Your generation wears shoes","D. Your generation wears hat", 4, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q29);
+
         Question q30 = new Question("Dia menyukai kopi",
                 "A. She likes pants", "B. She likes shoes", "C. She likes tea","D. She likes coffe", 4, Question.DIFFICULTY_MEDIUM);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q30);
 
-
-        Question q31 = new Question("When little riding hood arrived, the wolf in disguise told her to come in. little riding hood did not realize that it was the wolf.  Then the wolf ate a little riding hood and her grandmother. After eating them, the wolf fell asleep beside the river. Suddenly, a woodcutter came; he saw a large wolf’s belly and knew what had been done by the wolf. Then he saved them by releasing them out from the belly of the wolf and filled the wolf’s stomach with a big stone. Then he threw the wolf into the river.\n" +
-                "\n" +
-                "1. What is the story about",
-                "A. A kind wolf who wants to help little riding hood", "B. A little riding hood meet wolf ", "C. Grandma asked wolf to take little riding hood ", "D. A bad wolf who wants to eat little riding hood and grandma ",4, Question.DIFFICULTY_HARD);
-//                "A", "B", "C",1, Question.DIFFICULTY_HARD);
+        Question q31 = new Question("What does ‘it’ refer to?\n" +
+                "They've just closed the post office and turned it into a coffee shop",
+                "A. They", "B. Post Office", "C. Coffe  Shop ", "D. They",2, Question.DIFFICULTY_HARD);
         addQuestion(q31);
-        Question q32 = new Question("Why she eat?",
-                "A.Because she hungry", "B. Because she trusty", "C. Because she was daft ", "D. Because she was blind",1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C",2, Question.DIFFICULTY_HARD);
+
+        Question q32 = new Question("What does ‘they’ refer to?\n" +
+                "I asked at several shops for strawberries and the owners all told me they are out of season.",
+                "A. Shops", "B. Strawberries", "C. Owner", "D. Me",2, Question.DIFFICULTY_HARD);
         addQuestion(q32);
-        Question q33 = new Question("Who did save lot of a money?",
-                "A. Because  ", "B. The stranger", "C. The woodcutter","D. The little riding hood’s father ", 3, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_HARD);
+
+        Question q33 = new Question("Could you dry the dishes and put _____ away?",
+                "A. Them  ", "B. Their", "C. They","D. Those ", 1, Question.DIFFICULTY_HARD);
         addQuestion(q33);
-        Question q34 = new Question("What is the moral you love?",
-                "A. Don’t believe in stranger", "B. Don’t be greedy", "C. Don’t sleep in the river", "D. Don’t go to Grandma’s house",1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C",1, Question.DIFFICULTY_HARD);
+
+        Question q34 = new Question("Time to go to school, Sue. Have you got your keys?' I can't find _____",
+                "A. Them  ", "B. Their", "C. They","D. Those ",2, Question.DIFFICULTY_HARD);
         addQuestion(q34);
-        Question q35 = new Question("The fact that he was put in prison for something that he had not done made his wife ",
-                "A. cry", "B. Cried", "C. to cry", "D. to be crying",1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C",2, Question.DIFFICULTY_HARD);
+
+        Question q35 = new Question("The children are coming out of school in a minute. I need to go and pick _____ up.",
+                "A. She", "B. It", "C. Her", "D. Them",3, Question.DIFFICULTY_HARD);
         addQuestion(q35);
-        Question q36 = new Question("Student : Would you mind ______ me your book, Sir?",
-                "A. Lend", "B. to Lend", "C. Lending","D. Lent", 3, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
+        Question q36 = new Question("My jumper doesn't fit anymore. I think I've shrunk __________.",
+                "A. He", "B. She", "C. It","D. I", 4, Question.DIFFICULTY_HARD);
         addQuestion(q36);
-        Question q37 = new Question("Teacher : Well, students, for your assignment you must write a poem.\n" +
-                "Student : …\n",
-                "A. What?", "B. Excuse me", "C. Pardon me, sir?","D. I'm very sorry, Sir", 3, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
+        Question q37 = new Question("Ali and Marcus would like to invite ________ to the party too.",
+                "A. You", "B. I", "C. They","D. She", 1, Question.DIFFICULTY_HARD);
         addQuestion(q37);
-        Question q38 = new Question("Where does the teacher sit ?",
-                "A. In front of the classroom", "B. Behind the board", "C. Under the map","D. Behind the table", 4, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
+        Question q38 = new Question("I was stopped by a woman who wanted to ask ________ the way to the post office.",
+                "A. It", "B. We", "C. Me","D. She", 3, Question.DIFFICULTY_HARD);
         addQuestion(q38);
-        Question q39 = new Question(" Lina …… the match in Olympic Games. She is so sad.",
-                "A. won", "B. lost", "C. jumped","D. happy", 2, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
+        Question q39 = new Question(" ______ thought the holiday would be ideal for us.",
+                "A. Him", "B. Her", "C. We","D. Me", 3, Question.DIFFICULTY_HARD);
         addQuestion(q39);
-        Question q40 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
-                "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
+
+        Question q40 = new Question("My jumper doesn't fit anymore. I think I've shrunk __________.",
+                "A. He", "B. She", "C. It","D. I", 3, Question.DIFFICULTY_HARD);
         addQuestion(q40);
+
         Question q41 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q41);
+
         Question q42 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q42);
+
         Question q43 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q43);
+
         Question q44 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q44);
+
         Question q45 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q45);
+
         Question q46 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q46);
+
         Question q47 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q47);
+
         Question q48 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q48);
+
         Question q49 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q49);
+
         Question q50 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q50);
+
         Question q51 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q51);
+
         Question q52 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q52);
+
         Question q53 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q53);
+
         Question q54 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q54);
+
         Question q55 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q55);
+
         Question q56 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q56);
+
         Question q57 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q57);
+
         Question q58 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q58);
+
         Question q59 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q59);
+
         Question q60 = new Question("My mother is a nurse. She works in Harapan Bunda Hospital. She ….. the",
                 "A. helps", "B. thinks", "C. find","D. ignores", 1, Question.DIFFICULTY_HARD);
-//                "A", "B", "C", 3, Question.DIFFICULTY_EASY);
         addQuestion(q60);
     }
 
