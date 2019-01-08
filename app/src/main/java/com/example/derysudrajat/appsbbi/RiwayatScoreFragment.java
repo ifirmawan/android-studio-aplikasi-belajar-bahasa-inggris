@@ -14,9 +14,9 @@ public class RiwayatScoreFragment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_fragment);
         final ArrayList<Rwayat> rwayats = new ArrayList<>();
-        rwayats.add(new Rwayat("1","9","Hard",1));
-        rwayats.add(new Rwayat("9","1","Hard",9));
-        rwayats.add(new Rwayat("6","4","Hard",6));
+        rwayats.add(new Rwayat("22 Januari 2018", "0", "0", "Hard", 30));
+        rwayats.add(new Rwayat("22 Januari 2018", "0", "0", "Hard", 30));
+        rwayats.add(new Rwayat("22 Januari 2018", "0", "0", "Hard", 30));
         RiwayatAdapter riwayatAdapter =  new RiwayatAdapter(this, rwayats);
         RecyclerView rv= findViewById(R.id.mainRV);
         rv.setLayoutManager(new LinearLayoutManager(this));

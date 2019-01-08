@@ -43,7 +43,6 @@ public class LoginActivity extends Activity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                if (etUname.getText().toString().equals(etPassword.getText().toString())) {
                     Auth a = new Auth(getApplicationContext(), new User(etUname.getText().toString(), etPassword.getText().toString()), new Status() {
                         @Override
                         public void onLoginDone(User user) {
@@ -54,9 +53,6 @@ public class LoginActivity extends Activity {
                         }
                     });
                     a.login();
-//                } else {
-//                    Toast.makeText(getBaseContext(), "Username or Password is Wrong", Toast.LENGTH_SHORT).show();
-//                }
             }
         });
 
@@ -67,6 +63,7 @@ public class LoginActivity extends Activity {
 
             }
         });
+
         cbShow.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
@@ -89,7 +86,6 @@ public class LoginActivity extends Activity {
                 .setPositiveButton("yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int which) {
-//                  finish();
                         LoginActivity.super.onBackPressed();
                     }
                 })
@@ -103,5 +99,6 @@ public class LoginActivity extends Activity {
         alertDialog.show();
 
     }
+
 }
 

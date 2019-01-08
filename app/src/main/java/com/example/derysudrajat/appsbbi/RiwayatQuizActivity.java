@@ -15,9 +15,9 @@ public class RiwayatQuizActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.mainRV);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         final ArrayList<Rwayat> rwayats = new ArrayList<>();
-        rwayats.add(new Rwayat("1","9","Hard",1));
-        rwayats.add(new Rwayat("9","1","Hard",9));
-        rwayats.add(new Rwayat("6","4","Hard",6));
+        rwayats.add(new Rwayat("22 Januari 2018", "0", "0", "Hard", 30));
+        rwayats.add(new Rwayat("22 Januari 2018", "0", "0", "Hard", 30));
+        rwayats.add(new Rwayat("22 Januari 2018", "0", "0", "Hard", 30));
         RiwayatAdapter riwayatAdapter =  new RiwayatAdapter(this, rwayats);
         recyclerView.setAdapter(riwayatAdapter);
     }
