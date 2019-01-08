@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.derysudrajat.appsbbi.Quiz.Model.ScoreModel;
 import com.example.derysudrajat.appsbbi.Quiz.Network.STATICUSER;
 import com.example.derysudrajat.appsbbi.Quiz.Network.ServerProcessClass;
 import com.example.derysudrajat.appsbbi.R;
@@ -30,6 +31,9 @@ public class HasilQuizBaru extends AppCompatActivity {
     //public static final String SHARED_PREFS = "sharedPrefs";
     //public static final String KEY_HIGHSCORE = "keyHighscore";
     private final  String URL_SEND_HIGHSCORE = "http://bbi.rendyandriyanto.com/highscore.php";
+    ArrayList<ScoreModel> dataModels;
+    ListView listView;
+    private static ScoreAdapter adapter;
     ProgressDialog progressDialog ;
 
     @Override
@@ -96,6 +100,9 @@ public class HasilQuizBaru extends AppCompatActivity {
         }
         List<String> listdata = new ArrayList<>();
         JSONArray jArray = null;
+        listView=(ListView)findViewById(R.id.list);
+        dataModels= new ArrayList<>();
+
         try {
             jArray = jsonObject.getJSONArray("data");
         } catch (JSONException e) {
@@ -104,28 +111,21 @@ public class HasilQuizBaru extends AppCompatActivity {
         if (jArray != null) {
             for (int i=0;i<jArray.length();i++){
                 try {
-                    listdata.add(jArray.getString(i));
+                    String row = jArray.getString(i);
+                    JSONObject rowObject = new JSONObject(row);
+                    //Toast.makeText(HasilQuizBaru.this,rowObject.getString("username"),Toast.LENGTH_SHORT).show();
+                    //listdata.add(jArray.getString(i));
+
+                    dataModels.add(new ScoreModel(rowObject.getString("username"),  String.valueOf(rowObject.getInt("highscore")),rowObject.getString("highscore")));
+
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
             }
         }
-
-        if(listdata.size() > 0){
-            ListView lv = (ListView) findViewById(R.id.highscore_list_view);
-            // Buat daftar dari larik element bertipe String
-            final List<String> fruits_list = new ArrayList<String>(Arrays.<String>asList(String.valueOf(listdata)));
-            // Buat sebuah Adapter Larik
-            final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
-                    (this, android.R.layout.simple_list_item_1, fruits_list);
-            // Menambahkan header pada list
-            LayoutInflater inflater = getLayoutInflater();
-            ViewGroup header = (ViewGroup)inflater.inflate(R.layout.listview_header,lv,false);
-            lv.addHeaderView(header);
-
-            // DataBind ListView with items from ArrayAdapter
-            lv.setAdapter(arrayAdapter);
-        }
+        adapter= new ScoreAdapter(dataModels,getApplicationContext());
+        listView.setAdapter(adapter);
 
     }
 }
