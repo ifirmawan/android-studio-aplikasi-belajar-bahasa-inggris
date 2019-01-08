@@ -38,11 +38,13 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
         AHBottomNavigationItem crimeItem = new AHBottomNavigationItem("Materi", R.drawable.outline_book_white_18dp);
         AHBottomNavigationItem dramaItem = new AHBottomNavigationItem("Quiz", R.drawable.outline_format_list_bulleted_white_18dp);
         AHBottomNavigationItem docsItem = new AHBottomNavigationItem("Riwayat", R.drawable.baseline_stars_white_18dp);
+//        AHBottomNavigationItem pdfitem = new AHBottomNavigationItem("Ranking", R.drawable.podium);
 
         //ADD PROPERTIES
         bottomNavigation.addItem(crimeItem);
         bottomNavigation.addItem(dramaItem);
         bottomNavigation.addItem(docsItem);
+//        bottomNavigation.addItem(pdfitem);
 
         //SET PROPERTIES
         bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#fefefe"));
@@ -65,6 +67,10 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
             ScoreFragment scoreFragment = new ScoreFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.content_id, scoreFragment).commit();
         }
+// else if (position == 3) {
+//            PodiumFragment podiumFragment = new PodiumFragment();
+//            getSupportFragmentManager().beginTransaction().replace(R.id.content_id, podiumFragment).commit();
+//        }
     }
 
     public void onBackPressed() {

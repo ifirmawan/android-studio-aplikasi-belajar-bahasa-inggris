@@ -30,6 +30,7 @@ public class RiwayatAdapter extends RecyclerView.Adapter<RiwayatHolder> {
         riwayatHolder.progressBar.setProgress(rwayatItem.getmNilai());
         riwayatHolder.benar.setText(rwayatItem.getmNilaiBenar());
         riwayatHolder.salah.setText(rwayatItem.getmNilaiSalah());
+        riwayatHolder.tanggal.setText(rwayatItem.getmTanggal());
         riwayatHolder.tingkat.setText(rwayatItem.getmTingkatKesulitan());
     }
 

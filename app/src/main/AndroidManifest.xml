@@ -131,7 +131,7 @@
                 android:value=".IsiMateri3" />
         </activity>
         <activity android:name=".Pembahasan4Activity" />
-        <activity android:name=".Quiz.HasilQuizBaru"></activity>
+        <activity android:name=".Quiz.HasilQuizBaru" />
     </application>
 
 </manifest>
