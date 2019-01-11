@@ -1,7 +1,7 @@
 package com.example.derysudrajat.appsbbi.Quiz.Model;
 
 public class User {
-    private String username, password, nama,user_id, asal_sekolah;
+    private String username, password, nama, id_soal, user_id, asal_sekolah, soal, jawab, penjelasan;
 
     public User() {
         }
@@ -11,6 +11,9 @@ public class User {
         this.password = password;
         this.nama = nama;
         this.asal_sekolah = asal_sekolah;
+        this.soal = soal;
+        this.jawab = jawab;
+        this.penjelasan = penjelasan;
     }
     public User(String username, String password) {
         this.username = username;
@@ -55,5 +58,21 @@ public class User {
 
     public void setAsal_sekolah(String asal_sekolah) {
         this.asal_sekolah = asal_sekolah;
+    }
+
+    public String getSoal() {
+        return soal;
+    }
+
+    public String getJawab() {
+        return jawab;
+    }
+
+    public String getPenjelasan() {
+        return penjelasan;
+    }
+
+    public String getId_soal() {
+        return id_soal;
     }
 }

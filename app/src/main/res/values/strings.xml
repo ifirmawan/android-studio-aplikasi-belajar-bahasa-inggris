@@ -97,4 +97,10 @@
         <!-- - Whose is made of mahogany wood?-->
         <!--(Who is made of mahogany?) Whose as the subject-->
     </string>
+    <string name="toast_message">"1.   Enter your username for the quiz.
+
+2.   Now set your password for security purpose.
+
+              Enjoy the app! ☺</string>
+    <string name="note">QuizBook is a smart app which is designed with simple and optimized user interface. QuizBook has all the categories of quiz question which are used in daily life.</string>
 </resources>

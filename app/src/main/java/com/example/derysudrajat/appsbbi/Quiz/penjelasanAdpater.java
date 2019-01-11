@@ -11,49 +11,24 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.derysudrajat.appsbbi.Quiz.Model.Penjelasan;
 import com.example.derysudrajat.appsbbi.Quiz.Model.ScoreModel;
 import com.example.derysudrajat.appsbbi.R;
 
 import java.util.ArrayList;
 
-public class ScoreAdapter extends ArrayAdapter<ScoreModel> implements View.OnClickListener{
-    private ArrayList<ScoreModel> dataSet;
+public class penjelasanAdpater extends ArrayAdapter<Penjelasan> {
+    private ArrayList<Penjelasan> dataSet;
     Context mContext;
 
-    // View lookup cache
-    private static class ViewHolder {
-        TextView txtName, txttype, txtVersion;
-//        TextView txtType;
-//        TextView txtVersion;
-        ImageView info;
-    }
+   private static class ViewHolder{
+       TextView soal, jawab, uraian;
 
-
-
-    public ScoreAdapter(ArrayList<ScoreModel> data, Context context) {
-        super(context, R.layout.row_item, data);
+   }
+    public penjelasanAdpater(ArrayList<Penjelasan> data,Context context) {
+        super(context, R.layout.model_penjelasan, data);
         this.dataSet = data;
         this.mContext=context;
-
-    }
-
-
-    @Override
-    public void onClick(View v) {
-        int position=(Integer) v.getTag();
-        Object object= getItem(position);
-        ScoreModel ScoreModel=(ScoreModel)object;
-
-        switch (v.getId())
-        {
-
-            case R.id.item_info:
-                Snackbar.make(v, "Score = " +ScoreModel.getFeature(), Snackbar.LENGTH_LONG)
-                        .setAction("No action", null).show();
-                break;
-        }
-
-
     }
 
     private int lastPosition = -1;
@@ -61,7 +36,7 @@ public class ScoreAdapter extends ArrayAdapter<ScoreModel> implements View.OnCli
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Get the data item for this position
-        ScoreModel ScoreModel = getItem(position);
+        Penjelasan penjelasan = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
         ViewHolder viewHolder; // view lookup cache stored in tag
 
@@ -72,10 +47,10 @@ public class ScoreAdapter extends ArrayAdapter<ScoreModel> implements View.OnCli
 
             viewHolder = new ViewHolder();
             LayoutInflater inflater = LayoutInflater.from(getContext());
-            convertView = inflater.inflate(R.layout.row_item, parent, false);
-            viewHolder.txtName = convertView.findViewById(R.id.name);
-            viewHolder.txtVersion =  convertView.findViewById(R.id.version_number);
-            viewHolder.info =  convertView.findViewById(R.id.item_info);
+            convertView = inflater.inflate(R.layout.model_penjelasan, parent, false);
+            viewHolder.soal = convertView.findViewById(R.id.tvSoal);
+            viewHolder.jawab = convertView.findViewById(R.id.tvJawab);
+            viewHolder.uraian = convertView.findViewById(R.id.tvPenjelasan);
 
             result=convertView;
 
@@ -90,12 +65,10 @@ public class ScoreAdapter extends ArrayAdapter<ScoreModel> implements View.OnCli
         lastPosition = position;
 
 
-        viewHolder.txtName.setText(ScoreModel.getName());
-        viewHolder.txtVersion.setText(ScoreModel.getVersion_number());
-        viewHolder.info.setOnClickListener(this);
-        viewHolder.info.setTag(position);
+        viewHolder.soal.setText(penjelasan.getSoal());
+        viewHolder.jawab.setText(penjelasan.getJawab());
+        viewHolder.uraian.setText(penjelasan.getUraian());
         // Return the completed view to render on screen
         return convertView;
     }
-
 }

@@ -160,6 +160,19 @@
             android:text="Register Here"
             android:textColor="@color/biru"
             android:clickable="true"/>
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparan"
+            android:onClick="showHelp"
+            android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+            android:text="Help"
+            android:textAllCaps="false"
+            android:textColor="@color/custom_progress_orange_progress" />
+
     </LinearLayout>
 
 

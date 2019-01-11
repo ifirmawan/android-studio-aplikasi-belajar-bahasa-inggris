@@ -1,0 +1,42 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvSoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Ini adalah soal"
+        android:textSize="8pt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvJawab"
+        android:layout_below="@+id/tvSoal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="10pt"
+        android:text="Ini adalah jawaban"
+        android:textColor="@color/custom_progress_orange_progress"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPenjelasan"
+        android:layout_below="@+id/tvJawab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ini Berisi Jawaban"
+        android:textSize="8pt"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>
+</ScrollView>
+

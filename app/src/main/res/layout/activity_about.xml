@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:id="@+id/logoBBI"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:src="@drawable/logobbi"/>
+    <TextView
+        android:id="@+id/toast_about"
+        android:layout_below="@+id/logoBBI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="@string/note"
+        android:background="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/opensans_regular"/>
+    <TextView
+        android:id="@+id/dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Lusiana Haryanti \n
+haryanti.lusiana@gmail.com"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/opensans_regular"/>
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Share This Apps"-->
+        <!--android:onClick="share"-->
+        <!--android:textColor="#56a15a"-->
+        <!--android:background="@color/white"-->
+        <!--android:id="@+id/visit_website"/>-->
+
+</LinearLayout>

@@ -1,35 +1,23 @@
 package com.example.derysudrajat.appsbbi.Quiz.Model;
 
 public class Penjelasan {
-    private String pertanyaan,jawaban,penjelasan;
+    String soal,jawab,uraian;
 
-    public Penjelasan(String pertanyaan, String jawaban, String penjelasan) {
-        this.pertanyaan = pertanyaan;
-        this.jawaban = jawaban;
-        this.penjelasan = penjelasan;
+    public Penjelasan(String soal, String jawab, String uraian) {
+        this.soal = soal;
+        this.jawab = jawab;
+        this.uraian = uraian;
     }
 
-    public String getPertanyaan() {
-        return pertanyaan;
+    public String getSoal() {
+        return soal;
     }
 
-    public void setPertanyaan(String pertanyaan) {
-        this.pertanyaan = pertanyaan;
+    public String getJawab() {
+        return jawab;
     }
 
-    public String getJawaban() {
-        return jawaban;
-    }
-
-    public void setJawaban(String jawaban) {
-        this.jawaban = jawaban;
-    }
-
-    public String getPenjelasan() {
-        return penjelasan;
-    }
-
-    public void setPenjelasan(String penjelasan) {
-        this.penjelasan = penjelasan;
+    public String getUraian() {
+        return uraian;
     }
 }

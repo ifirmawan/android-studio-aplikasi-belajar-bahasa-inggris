@@ -31,7 +31,7 @@ public class HasilQuiz extends AppCompatActivity {
     public static final String SHARED_PREFS = "sharedPrefs";
     public static final String KEY_HIGHSCORE = "keyHighscore";
 
-    private TextView tvHighscore, tvPenjelasan, tvHome,tvIncorrect,tvCorrect;
+    private TextView tvHighscore, tvPenjelasan, hello, tvnama, tvHome,tvIncorrect,tvCorrect;
 
     private int highscore;
     private final  String URL_SEND_HIGHSCORE = "http://bbi.rendyandriyanto.com/send_highscore.php";
@@ -47,6 +47,10 @@ public class HasilQuiz extends AppCompatActivity {
 //        tvPenjelasan = findViewById(R.id.tvPenjelasan);
         tvHome = findViewById(R.id.tvHome);
         loadHighscore();
+        hello = findViewById(R.id.hello);
+        TextView namaLengkap =  findViewById(R.id.tvnama);
+        hello.setText("Hello,  ");
+        namaLengkap.setText(STATICUSER.USER.getNama());
         int score = getIntent().getIntExtra(QuizActivity.EXTRA_SCORE, 0);
         int score_wrong = getIntent().getIntExtra(QuizActivity.EXTRA_WRONG_SCORE, 0);
         tvIncorrect.setText(String.valueOf(score_wrong));
@@ -54,7 +58,7 @@ public class HasilQuiz extends AppCompatActivity {
         //Log.d("WEW", String.valueOf(score_wrong));
         updateHighscore(score);
 
-        Button btnUpload = (Button) findViewById(R.id.btnUpload);
+        Button btnUpload =  findViewById(R.id.btnUpload);
         btnUpload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -114,12 +118,12 @@ public class HasilQuiz extends AppCompatActivity {
     private void loadHighscore() {
         SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         highscore = prefs.getInt(KEY_HIGHSCORE, 0);
-        tvHighscore.setText("" + highscore);
+        tvHighscore.setText("" + highscore );
     }
 
     private void updateHighscore(int highscoreNew) {
         highscore = highscoreNew;
-        tvHighscore.setText("" + highscore);
+        tvHighscore.setText("" + highscore );
 
         SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();

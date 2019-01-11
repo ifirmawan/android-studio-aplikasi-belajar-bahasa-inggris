@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -23,7 +26,7 @@ import com.example.derysudrajat.appsbbi.Quiz.Network.Status;
 
 public class LoginActivity extends Activity {
     ImageView pict1;
-    Button btnLogin;
+    Button btnLogin, btnHelp;
     TextView tvRegister;
     EditText etUname, etPassword;
     CheckBox cbShow;
@@ -34,6 +37,7 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
         etPassword = findViewById(R.id.etPassword);
         etUname = findViewById(R.id.etUname);
+        btnHelp = findViewById(R.id.btnHelp);
         btnLogin = findViewById(R.id.btnLogin);
         tvRegister = findViewById(R.id.tvRegister);
         cbShow = findViewById(R.id.cbShow);
@@ -99,6 +103,18 @@ public class LoginActivity extends Activity {
         alertDialog.show();
 
     }
+    public void showHelp(View view) {
+
+        Toast toast_help = new Toast(getApplicationContext());
+        toast_help.setGravity(Gravity.CENTER, 0, 0);
+        toast_help.setDuration(Toast.LENGTH_LONG);
+        LayoutInflater inflater = getLayoutInflater();
+        View appear = inflater.inflate(R.layout.activity_help, (ViewGroup) findViewById(R.id.linear));
+        toast_help.setView(appear);
+        toast_help.show();
+
+    }
+
 
 }
 

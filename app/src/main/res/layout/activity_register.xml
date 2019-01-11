@@ -112,10 +112,10 @@
             android:layout_width="237dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/etPasswordUlang"
-            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
             android:background="@drawable/shapelogin"
             android:padding="15dp"
-            android:layout_centerInParent="true"
             android:shadowColor="@android:color/transparent"
             android:text="Sign Up" />
         <TextView
@@ -137,6 +137,19 @@
             android:textAlignment="center"
             android:textColor="@color/biru"
             android:onClick="goLogin"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAbout"
+            android:layout_below="@+id/tvLogin"
+            android:layout_centerInParent="true"
+            android:background="@color/transparan"
+            android:onClick="showAbout"
+            android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+            android:text="About"
+            android:textAllCaps="false"
+            android:textColor="@color/custom_progress_orange_progress" />
+
     </RelativeLayout>
 
 </ScrollView>

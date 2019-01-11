@@ -42,7 +42,16 @@
                     <!--android:layout_centerInParent="true"-->
                     <!--android:gravity="center_horizontal"-->
                     <!--android:orientation="vertical">-->
-
+                <!--<ImageButton-->
+                    <!--android:id="@+id/btnRank"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:src="@drawable/podium"-->
+                    <!--android:background="@color/transparan"-->
+                    <!--android:onClick="Rank"/>-->
                     <TextView
                         android:id="@+id/hello"
                         android:layout_width="match_parent"

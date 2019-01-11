@@ -71,8 +71,7 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.model_quiz);
-
-    penjelasanList = new ArrayList<Penjelasan>();
+        penjelasanList = new ArrayList<Penjelasan>();
         textViewQuestion = findViewById(R.id.tvQuestion);
         textViewScore = findViewById(R.id.tvScore);
         textViewQuestionCount = findViewById(R.id.tvquestionCount);
@@ -202,12 +201,12 @@ public class QuizActivity extends AppCompatActivity {
 
         countDownTimer.cancel();
 
-        RadioButton rbSelected = (RadioButton) findViewById(rbGroup.getCheckedRadioButtonId());
+        RadioButton rbSelected = findViewById(rbGroup.getCheckedRadioButtonId());
         int answerNr = rbGroup.indexOfChild(rbSelected) + 1;
 
         if (answerNr == currentQuestion.getAnswerNr()) {
             score++;
-            //score = score + 10;
+//            score = answerNr * 10;
             textViewScore.setText("Score: " + score);
         }else{
             wrong_score++;
@@ -280,7 +279,7 @@ public class QuizActivity extends AppCompatActivity {
             finishQuiz();
         } else {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage("Are you sure you want to exit?")
+            builder.setMessage("Are you sure you want to exit this quiz?")
                     .setCancelable(false)
                     .setPositiveButton("yes", new DialogInterface.OnClickListener() {
                         @Override

@@ -13,13 +13,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.derysudrajat.appsbbi.Quiz.HasilQuizBaru;
 
 
 public class ScoreFragment extends Fragment {
     String[] title={"Quiz 1","Quiz 2","Quiz 3"};
     String[] score={"Score: 0","Score: 0","Score: 0",};
     int[] img={R.drawable.scoreasy,R.drawable.scormedium,R.drawable.scorhard};
-    Class[] detail={RiwayatScoreFragment.class,RiwayatScoreFragment2.class,RiwayatScoreFragment3.class};
+    Class[] detail={HasilQuizBaru.class,RiwayatScoreFragment2.class,RiwayatScoreFragment3.class};
 
     @Nullable
     @Override

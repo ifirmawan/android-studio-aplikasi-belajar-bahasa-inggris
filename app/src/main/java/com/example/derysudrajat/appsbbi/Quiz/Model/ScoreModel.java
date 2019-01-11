@@ -2,7 +2,6 @@ package com.example.derysudrajat.appsbbi.Quiz.Model;
 
 public class ScoreModel {
     String name;
-
     String version_number;
     String feature;
 

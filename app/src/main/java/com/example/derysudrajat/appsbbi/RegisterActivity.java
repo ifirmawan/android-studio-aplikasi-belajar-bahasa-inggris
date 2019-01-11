@@ -5,7 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -17,7 +20,7 @@ import com.example.derysudrajat.appsbbi.Quiz.Network.Auth;
 import com.example.derysudrajat.appsbbi.Quiz.Network.Status;
 
 public class RegisterActivity extends Activity {
-    Button btnSignup;
+    Button btnSignup, btnAbout;
     EditText etUname,etfullName, etPassword, etPasswordUlang, etAsalSekolah ;
     ImageButton cbShow;
 
@@ -31,6 +34,7 @@ public class RegisterActivity extends Activity {
         etPassword = findViewById(R.id.etPassword);
         etPasswordUlang = findViewById(R.id.etPasswordUlang);
         btnSignup =  findViewById(R.id.btnSignup);
+        btnAbout = findViewById(R.id.btnAbout);
 
 
         btnSignup.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +60,16 @@ else{
     public void goLogin(View view){
         Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
         startActivity(i);
+    }
+    public void showAbout(View view) {
+        Toast toast_help = new Toast(getApplicationContext());
+        toast_help.setGravity(Gravity.CENTER, 0, 0);
+        toast_help.setDuration(Toast.LENGTH_LONG);
+        LayoutInflater inflater = getLayoutInflater();
+        View appear = inflater.inflate(R.layout.activity_about, (ViewGroup) findViewById(R.id.linear));
+        toast_help.setView(appear);
+        toast_help.show();
+
     }
 
 }

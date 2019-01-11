@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.derysudrajat.appsbbi.IsiMateri1;
+import com.example.derysudrajat.appsbbi.MainActivity;
 import com.example.derysudrajat.appsbbi.Quiz.Model.ScoreModel;
 import com.example.derysudrajat.appsbbi.Quiz.Network.STATICUSER;
 import com.example.derysudrajat.appsbbi.Quiz.Network.ServerProcessClass;
@@ -100,7 +102,7 @@ public class HasilQuizBaru extends AppCompatActivity {
         }
         List<String> listdata = new ArrayList<>();
         JSONArray jArray = null;
-        listView=(ListView)findViewById(R.id.list);
+        listView=findViewById(R.id.list);
         dataModels= new ArrayList<>();
 
         try {
@@ -126,6 +128,12 @@ public class HasilQuizBaru extends AppCompatActivity {
         }
         adapter= new ScoreAdapter(dataModels,getApplicationContext());
         listView.setAdapter(adapter);
+    }
 
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(HasilQuizBaru.this, MainActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(i);
     }
 }

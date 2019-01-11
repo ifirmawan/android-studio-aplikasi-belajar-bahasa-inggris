@@ -15,33 +15,45 @@
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/logobbi"/>
-    <TextView
-        android:layout_below="@+id/pict1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvteks0"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:paddingTop="30dp"
-        android:text="Hello "/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/pict1"
+            android:layout_height="wrap_content"
+            android:id="@+id/linHello"
+            android:paddingTop="20dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, "
+                android:id="@+id/hello"
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tvnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+        </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tvteks"
-        android:layout_below="@+id/tvteks0"
+        android:layout_below="@+id/linHello"
         android:textAlignment="center"
         android:textSize="25sp"
-        android:paddingTop="10dp"
         android:text="Your Score is: "/>
     <TextView
         android:id="@+id/tvhighscore"
         android:layout_below="@id/tvteks"
         android:layout_width="match_parent"
-        android:paddingTop="0dp"
         android:text="0"
+        android:fontFamily="@font/opensans_regular"
+        android:textStyle="bold"
         android:textAlignment="center"
-        android:textSize="75sp"
-        android:layout_height="wrap_content" />
+        android:textSize="70sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
@@ -58,8 +70,9 @@
         android:layout_below="@+id/tvhighscore"
         android:layout_height="wrap_content"
         android:id="@+id/Linincorrect"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -79,11 +92,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_below="@+id/Linincorrect"
         android:id="@+id/LinCorrect"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="50dp">
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="70dp">
 
         <TextView
             android:layout_width="wrap_content"
