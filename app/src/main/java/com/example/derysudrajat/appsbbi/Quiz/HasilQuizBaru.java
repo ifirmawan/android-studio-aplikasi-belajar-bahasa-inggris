@@ -42,9 +42,10 @@ public class HasilQuizBaru extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hasil_quiz_baru);
-        //if (getIntent().hasExtra("user_id")){
+        //if (getIntent().hasExtra("user_id")){ //2. menerima intent put extra
             //Toast.makeText(HasilQuizBaru.this,getIntent().getStringExtra("user_id"),Toast.LENGTH_LONG).show();
         //}
+
         LoadHighScoreFromServer();
     }
 

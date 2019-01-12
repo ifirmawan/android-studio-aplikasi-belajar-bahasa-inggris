@@ -60,7 +60,8 @@ public class QuizActivity extends AppCompatActivity {
 
     private ArrayList<Question> questionList;
     private int questionCounter;
-    private int questionCountTotal;
+    private int total_soal;
+    private int questionCountTotal;//1. kirim intent ke hasilQuiz pake putExtra('total_soal',countTotal)
     private Question currentQuestion;
 
     private int score,wrong_score = 0;
@@ -128,6 +129,11 @@ public class QuizActivity extends AppCompatActivity {
                 }
             }
         });
+//        No 1. ini yang kirim intent
+//        Toast.makeText(HasilQuiz.this,string1,Toast.LENGTH_LONG).show();
+//        Intent i = new Intent(QuizActivity.this, HasilQuizBaru.class); //QuizActiy
+//        i.putExtra("jml_soal", String.valueOf(questionCountTotal)); //1. mengirim intent
+//        startActivity(i);
     }
 
     private void showNextQuestion() {
@@ -320,4 +326,6 @@ public class QuizActivity extends AppCompatActivity {
 
         outState.putParcelableArrayList(KEY_QUESTION_LIST, questionList);
     }
+
+
 }

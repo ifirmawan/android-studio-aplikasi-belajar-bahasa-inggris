@@ -101,7 +101,7 @@ public class Pembahasan2Activity extends AppCompatActivity {
                     //Toast.makeText(HasilQuizBaru.this,rowObject.getString("username"),Toast.LENGTH_SHORT).show();
                     //listdata.add(jArray.getString(i));
 
-                    dataModels.add(new Penjelasan(rowObject.getString("username"),  String.valueOf(rowObject.getInt("soal")),rowObject.getString("jawab")));
+                    dataModels.add(new Penjelasan(rowObject.getString("soal"),  String.valueOf(rowObject.getInt("jawab")),rowObject.getString("uraian")));
 
 
                 } catch (JSONException e) {
