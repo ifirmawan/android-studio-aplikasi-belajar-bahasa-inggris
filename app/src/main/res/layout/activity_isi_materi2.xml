@@ -28,10 +28,10 @@
                 android:paddingBottom="10dp"/>
             <ImageButton
                 android:id="@+id/imgVi2"
+                android:layout_below="@+id/tvNext"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/tvNext"
                 android:layout_marginTop="10dp"
                 android:clickable="true"
                 android:src="@drawable/pos"
@@ -52,7 +52,7 @@
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:background="@color/rumus"
+                android:background="@color/biru"
                 android:id="@+id/rumus1"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/nameTxt4"
@@ -99,7 +99,7 @@
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:background="@color/rumus"
+                android:background="@color/biru"
                 android:id="@+id/nameTxt4b"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/nameTxt4a"
@@ -145,7 +145,7 @@
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:background="@color/rumus"
+                android:background="@color/biru"
                 android:id="@+id/nameTxt4bb"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/nameTxt4aa"
@@ -165,19 +165,19 @@
         \n\n  - Muhammad is the richest person.
         \n\n  - The plane is the fastest transportation."
                 android:textSize="18sp" />
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/quizkecilsatu"
-                android:onClick="quiskecildua"
-                android:fontFamily="@font/opensans_reguler"
-                android:textStyle="bold"
-                android:layout_below="@+id/nameTxt555"
-                android:layout_centerHorizontal="true"
-                android:text="Take Simple Quiz"
-                android:background="@drawable/mybutton"
-                android:textColor="@color/white"
-                android:layout_marginBottom="30dp"/>
+            <!--<Button-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/quizkecilsatu"-->
+                <!--android:onClick="quiskecildua"-->
+                <!--android:fontFamily="@font/opensans_reguler"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_below="@+id/nameTxt555"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Take Simple Quiz"-->
+                <!--android:background="@drawable/mybutton"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginBottom="30dp"/>-->
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 </ScrollView>

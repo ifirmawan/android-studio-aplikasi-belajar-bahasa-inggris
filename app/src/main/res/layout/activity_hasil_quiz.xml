@@ -122,7 +122,7 @@
         android:textAlignment="center"
         android:textSize="20sp"
         android:paddingTop="10dp"
-        android:text="Explaination "
+        android:text="Explanation "
         android:textColor="@color/biru"
         android:onClick="penjelasan"/>
     <TextView

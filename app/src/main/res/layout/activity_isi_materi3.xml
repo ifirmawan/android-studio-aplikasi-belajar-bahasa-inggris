@@ -143,19 +143,19 @@
         \n\n To strengthen meaning or emphasize:
         \n\n  - They themselves agreed to sign."
                 android:textSize="18sp" />
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/quizkecilsatu"
-                android:onClick="quiskeciltiga"
-                android:layout_below="@+id/nameTxt555"
-                android:layout_centerHorizontal="true"
-                android:text="Take Simple Quiz"
-                android:fontFamily="@font/opensans_reguler"
-                android:textStyle="bold"
-                android:background="@drawable/mybutton"
-                android:textColor="@color/white"
-                android:layout_marginBottom="30dp"/>
+            <!--<Button-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/quizkecilsatu"-->
+                <!--android:onClick="quiskeciltiga"-->
+                <!--android:layout_below="@+id/nameTxt555"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Take Simple Quiz"-->
+                <!--android:fontFamily="@font/opensans_reguler"-->
+                <!--android:textStyle="bold"-->
+                <!--android:background="@drawable/mybutton"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginBottom="30dp"/>-->
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 </ScrollView>

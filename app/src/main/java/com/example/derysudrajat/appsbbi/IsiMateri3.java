@@ -58,11 +58,11 @@ public class IsiMateri3 extends AppCompatActivity {
         // Release the MediaPlayer if going into background if it isn't null
         if(mp != null) mp.release();
         }
-    public void quiskeciltiga(View v)
-    {
-        Intent intentTentang = new Intent(IsiMateri3.this, quissimple3.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
-        startActivity(intentTentang);
-    }
+//    public void quiskeciltiga(View v)
+//    {
+//        Intent intentTentang = new Intent(IsiMateri3.this, quissimple3.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
+//        startActivity(intentTentang);
+//    }
     public void onBackPressed() {
         Intent i = new Intent(IsiMateri3.this, MainActivity.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

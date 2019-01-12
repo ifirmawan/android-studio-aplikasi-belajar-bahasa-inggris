@@ -31,11 +31,10 @@
         <activity android:name=".Materi" />
         <activity
             android:name=".IsiMateri1"
-            android:label="Listening Section"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:label="Listening Section">
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".MainActivity" />-->
         </activity>
         <activity
             android:name=".MulaiQuizA"
@@ -83,19 +82,17 @@
             />
         <activity
             android:name=".IsiMateri2"
-            android:label="Degree of Comparison"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:label="Degree of Comparison">
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".MainActivity" />-->
         </activity>
         <activity
             android:name=".IsiMateri3"
-            android:label="Noun and Pronoun"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:label="Noun and Pronoun">
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".MainActivity" />-->
         </activity>
         <activity android:name=".PembahasanActivity" />
         <activity android:name=".Pembahasan2Activity" />

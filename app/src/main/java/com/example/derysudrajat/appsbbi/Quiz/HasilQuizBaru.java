@@ -68,7 +68,7 @@ public class HasilQuizBaru extends AppCompatActivity {
 
                 progressDialog.dismiss();
 
-                //Toast.makeText(HasilQuizBaru.this,string1,Toast.LENGTH_LONG).show();
+//                Toast.makeText(HasilQuizBaru.this,string1,Toast.LENGTH_LONG).show();
                 convertJsonStringToArray(string1);
             }
 
