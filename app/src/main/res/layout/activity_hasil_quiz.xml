@@ -11,16 +11,15 @@
         android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/pict1"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/logobbi"/>
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/medals"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_below="@+id/pict1"
             android:layout_height="wrap_content"
             android:id="@+id/linHello"
-            android:paddingTop="20dp"
+            android:paddingTop="15dp"
             android:layout_centerHorizontal="true">
             <TextView
                 android:layout_width="wrap_content"
@@ -58,7 +57,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:id="@+id/btnUpload"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_below="@+id/LinCorrect"
             android:background="@drawable/mybutton"
             android:layout_centerHorizontal="true"
@@ -95,7 +94,6 @@
         android:layout_below="@+id/Linincorrect"
         android:id="@+id/LinCorrect"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:layout_marginRight="70dp">
 

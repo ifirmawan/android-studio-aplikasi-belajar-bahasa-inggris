@@ -30,6 +30,7 @@ public class PembahasanActivity extends AppCompatActivity {
         TextView tv=  findViewById(R.id.tvHome);
         tv.setText("Exit");
         Intent intentTentang = new Intent(PembahasanActivity.this, Pembahasan2Activity.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
+        intentTentang.putExtra("level","easy"); //ini ngirim
         startActivity(intentTentang);
     }
     public void hardbtn(View v)
@@ -37,6 +38,7 @@ public class PembahasanActivity extends AppCompatActivity {
         TextView tv=  findViewById(R.id.tvHome);
         tv.setText("Exit");
         Intent intentTentang = new Intent(PembahasanActivity.this, Pembahasan3Activity.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
+        intentTentang.putExtra("level","hard"); //ini ngirim
         startActivity(intentTentang);
     }
     public void medbtn(View v)
@@ -44,6 +46,7 @@ public class PembahasanActivity extends AppCompatActivity {
         TextView tv=  findViewById(R.id.tvHome);
         tv.setText("Exit");
         Intent intentTentang = new Intent(PembahasanActivity.this, Pembahasan4Activity.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
+        intentTentang.putExtra("level","medium"); //ini ngirim
         startActivity(intentTentang);
     }
     public void onBackPressed() {

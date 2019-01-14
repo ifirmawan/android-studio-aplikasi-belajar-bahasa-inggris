@@ -18,7 +18,7 @@
             android:id="@+id/pict1"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:src="@drawable/logobbi"/>
         <!--<TextView-->
             <!--android:layout_width="match_parent"-->
@@ -74,6 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
+            android:fontFamily="@font/opensans_regular"
             android:layout_marginTop="30dp"
             android:padding="15dp"
             android:background="@drawable/shapeemail"
@@ -93,6 +94,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20px"
             android:padding="15dp"
+            android:fontFamily="@font/opensans_regular"
             android:background="@drawable/shapeemail"
             android:drawableLeft="@drawable/ic_lock_black_24dp"
             android:drawablePadding="10dp"
@@ -158,6 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register Here"
+            android:textSize="18sp"
             android:textColor="@color/biru"
             android:clickable="true"/>
         <Button
@@ -168,6 +171,7 @@
             android:layout_centerHorizontal="true"
             android:background="@color/transparan"
             android:onClick="showHelp"
+            android:textSize="16sp"
             android:drawableLeft="@drawable/ic_info_outline_black_24dp"
             android:text="Help"
             android:textAllCaps="false"

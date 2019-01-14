@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.derysudrajat.appsbbi.IsiMateri1;
 import com.example.derysudrajat.appsbbi.MainActivity;
+import com.example.derysudrajat.appsbbi.Quiz.HasilQuizBaru;
 import com.example.derysudrajat.appsbbi.Quiz.Model.ScoreModel;
 import com.example.derysudrajat.appsbbi.Quiz.Network.STATICUSER;
 import com.example.derysudrajat.appsbbi.Quiz.Network.ServerProcessClass;

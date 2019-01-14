@@ -148,7 +148,6 @@ public class HasilQuiz extends AppCompatActivity {
     public void penjelasan(View v)
     {
         TextView tv=  findViewById(R.id.tvPenjelasan);
-        tv.setText("Explaination");
         Intent intentTentang = new Intent(HasilQuiz.this, PembahasanActivity.class); //membuat nama intentTentang yang ditujukan ke Class TentangActivity
         startActivity(intentTentang);
     }

@@ -6,7 +6,10 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.Toast;
 
+import com.example.derysudrajat.appsbbi.Quiz.HasilQuiz;
+import com.example.derysudrajat.appsbbi.Quiz.HasilQuizBaru;
 import com.example.derysudrajat.appsbbi.Quiz.Model.Penjelasan;
 import com.example.derysudrajat.appsbbi.Quiz.Network.STATICUSER;
 import com.example.derysudrajat.appsbbi.Quiz.Network.ServerProcessClass;
@@ -25,13 +28,19 @@ public class Pembahasan2Activity extends AppCompatActivity {
     private final  String URL_SEND_PENJELASAN = "http://bbi.rendyandriyanto.com/penjelasan.php";
     ArrayList<Penjelasan> dataModels;
     ListView listView;
+    String level;
     private static penjelasanAdpater adapter;
     ProgressDialog progressDialog ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pembahasan2);
-
+//        level = getExtraData("");
+        if (getIntent().hasExtra("level")){ //2. menerima intent put extra
+            level = getIntent().getStringExtra("level");
+//        Toast.makeText(Pembahasan2Activity.this,getIntent().getStringExtra("level"),Toast.LENGTH_LONG).show();
+        }
+//        Toast.makeText(getApplicationContext(),String.valueOf(STATICUSER.USER.getId_level()),Toast.LENGTH_SHORT).show();
         LoadPenjelasanFromServer();
     }
     public void LoadPenjelasanFromServer(){
@@ -61,10 +70,12 @@ public class Pembahasan2Activity extends AppCompatActivity {
 
                 HashMap<String,String> HashMapParams = new HashMap<String,String>();
                 //SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+                HashMapParams.put("level","easy");
 
 
-                HashMapParams.put("id_level", String.valueOf(STATICUSER.USER.getId_level()));
-
+//                HashMapParams.put("level", String.valueOf(STATICUSER.USER.getLevel()));
+//                Toast.makeText(Pembahasan2Activity.this.Toast.LENGTH_LONG).show();
+//                Toast.makeText(HasilQuizBaru.this,rowObject.getString("id_level"),Toast.LENGTH_SHORT).show();
 
                 String FinalData = serverProcessClass.ServerHttpRequest(URL_SEND_PENJELASAN, HashMapParams);
 
@@ -98,8 +109,8 @@ public class Pembahasan2Activity extends AppCompatActivity {
                 try {
                     String row = jArray.getString(i);
                     JSONObject rowObject = new JSONObject(row);
-                    //Toast.makeText(HasilQuizBaru.this,rowObject.getString("username"),Toast.LENGTH_SHORT).show();
-                    //listdata.add(jArray.getString(i));
+//                    Toast.makeText(Pembahasan2Activity.this,rowObject.getString("soal"),Toast.LENGTH_SHORT).show();
+                    listdata.add(jArray.getString(i));
 
                     dataModels.add(new Penjelasan(rowObject.getString("soal"),  String.valueOf(rowObject.getString("jawab")),rowObject.getString("uraian")));
 
