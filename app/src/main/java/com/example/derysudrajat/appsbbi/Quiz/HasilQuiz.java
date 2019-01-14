@@ -35,7 +35,7 @@ public class HasilQuiz extends AppCompatActivity {
 
     private int highscore;
     private int jml_soal;
-    private int questionCountTotal;
+    private String questionCountTotal;
     private final  String URL_SEND_HIGHSCORE = "http://bbi.rendyandriyanto.com/send_highscore.php";
     ProgressDialog progressDialog ;
 
@@ -69,7 +69,8 @@ public class HasilQuiz extends AppCompatActivity {
         });
 
         if (getIntent().hasExtra("jml_soal")){ //2. menerima intent put extra
-        Toast.makeText(HasilQuiz.this,getIntent().getStringExtra("jml_soal"),Toast.LENGTH_LONG).show();
+            questionCountTotal = getIntent().getStringExtra("jml_soal");
+//        Toast.makeText(HasilQuiz.this,getIntent().getStringExtra("jml_soal"),Toast.LENGTH_LONG).show();
         }
     }
 
@@ -92,10 +93,10 @@ public class HasilQuiz extends AppCompatActivity {
 
                 progressDialog.dismiss();
 
-                //Toast.makeText(HasilQuiz.this,string1,Toast.LENGTH_LONG).show();
-                Intent i = new Intent(HasilQuiz.this,HasilQuizBaru.class); //QuizActiy
+                Toast.makeText(HasilQuiz.this,string1,Toast.LENGTH_LONG).show();
+//                Intent i = new Intent(HasilQuiz.this,HasilQuizBaru.class); //QuizActiy
                 //i.putExtra("jml_soal",String.valueOf(.....)); //1. mengirim intent
-                startActivity(i);
+//                startActivity(i);
 
             }
 
@@ -110,15 +111,14 @@ public class HasilQuiz extends AppCompatActivity {
 
                 HashMapParams.put("user_id", String.valueOf(STATICUSER.USER.getUserID()));
                 HashMapParams.put("highscore", String.valueOf(highscore));
-//              HashMapParams.put("jml_soal", String.valueOf(questionCountTotal));
-//                        3.
-//                if(jml_soal == 10){
-//                HashMapParams.put("level", "easy");
-//                }else if (jml_soal == 20) {
-//                HashMapParams.put("level", "medium");
-//                }else if (jml_soal == 30) {
-//                    HashMapParams.put("level", "hard");
-//                };
+
+                if(questionCountTotal.equals("10")){
+                    HashMapParams.put("level", "easy");
+                }else if (questionCountTotal.equals("20")) {
+                    HashMapParams.put("level", "medium");
+                }else if (questionCountTotal.equals("30")) {
+                    HashMapParams.put("level", "hard");
+                }
 
                 String FinalData = serverProcessClass.ServerHttpRequest(URL_SEND_HIGHSCORE, HashMapParams);
 

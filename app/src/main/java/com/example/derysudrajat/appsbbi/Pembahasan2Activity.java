@@ -42,7 +42,7 @@ public class Pembahasan2Activity extends AppCompatActivity {
 
                 super.onPreExecute();
 
-                progressDialog = ProgressDialog.show(Pembahasan2Activity.this,"Loading score","Please Wait",false,false);
+                progressDialog = ProgressDialog.show(Pembahasan2Activity.this,"Loading Explanation","Please Wait",false,false);
             }
             @Override
             protected void onPostExecute(String string1) {
@@ -63,7 +63,7 @@ public class Pembahasan2Activity extends AppCompatActivity {
                 //SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
 
 
-                HashMapParams.put("id_soal", String.valueOf(STATICUSER.USER.getId_soal()));
+                HashMapParams.put("id_level", String.valueOf(STATICUSER.USER.getId_level()));
 
 
                 String FinalData = serverProcessClass.ServerHttpRequest(URL_SEND_PENJELASAN, HashMapParams);
@@ -101,7 +101,7 @@ public class Pembahasan2Activity extends AppCompatActivity {
                     //Toast.makeText(HasilQuizBaru.this,rowObject.getString("username"),Toast.LENGTH_SHORT).show();
                     //listdata.add(jArray.getString(i));
 
-                    dataModels.add(new Penjelasan(rowObject.getString("soal"),  String.valueOf(rowObject.getInt("jawab")),rowObject.getString("uraian")));
+                    dataModels.add(new Penjelasan(rowObject.getString("soal"),  String.valueOf(rowObject.getString("jawab")),rowObject.getString("uraian")));
 
 
                 } catch (JSONException e) {

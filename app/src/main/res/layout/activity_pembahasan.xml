@@ -19,7 +19,7 @@
         android:id="@+id/tvJudul"
         android:layout_below="@+id/pict1"
         android:paddingTop="20dp"
-        android:text="Explaination "
+        android:text="Explanation "
         android:textAlignment="center"
         android:textSize="12pt"/>
     <Button
@@ -30,7 +30,7 @@
         android:layout_marginTop="20dp"
         android:onClick="easybtn"
         android:layout_centerHorizontal="true"
-        android:text="Show Explaination Quiz Easy"
+        android:text="Show Explanation Quiz Easy"
         android:background="@drawable/mybutton"
         android:textColor="@color/white"/>
     <Button
@@ -41,7 +41,7 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:onClick="medbtn"
-        android:text="Show Explaination Quiz Meidum"
+        android:text="Show Explanation Quiz Meidum"
         android:background="@drawable/mybutton"
         android:textColor="@color/white"/>
     <Button
@@ -52,7 +52,7 @@
         android:layout_marginTop="20dp"
         android:onClick="hardbtn"
         android:layout_centerHorizontal="true"
-        android:text="Show Explaination Quiz Hard"
+        android:text="Show Explanation Quiz Hard"
         android:background="@drawable/mybutton"
         android:textColor="@color/white"/>
     <TextView

@@ -1,7 +1,7 @@
 package com.example.derysudrajat.appsbbi.Quiz.Model;
 
 public class User {
-    private String username, password, nama, id_soal, user_id, asal_sekolah, soal, jawab, penjelasan;
+    private String username, password, nama, id_level, user_id, asal_sekolah, soal, jawab, penjelasan;
 
     public User() {
         }
@@ -72,7 +72,11 @@ public class User {
         return penjelasan;
     }
 
-    public String getId_soal() {
-        return id_soal;
+//    public String getId_soal() {
+//        return id_soal;
+//    }
+
+    public String getId_level() {
+        return id_level;
     }
 }

@@ -163,6 +163,7 @@ public class QuizActivity extends AppCompatActivity {
             Intent i = new Intent(QuizActivity.this, HasilQuiz.class);
             i.putExtra(EXTRA_SCORE, score);
             i.putExtra(EXTRA_WRONG_SCORE, wrong_score);
+            i.putExtra("jml_soal",String.valueOf(questionCountTotal));
             setResult(RESULT_OK, i);
             startActivityForResult(i, REQUEST_CODE_QUIZ);
             startActivity(i);

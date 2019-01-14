@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/ivKado"
             android:paddingTop="75dp"
+            android:fontFamily="@font/opensans_regular"
             android:text="@string/app_name"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -40,6 +41,8 @@
             android:layout_below="@+id/tvBBI"
             android:layout_alignParentBottom="true"
             android:text="Belajar Bahasa Inggris"
+            android:fontFamily="@font/opensans_regular"
+            android:textAllCaps="true"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="8pt" />
