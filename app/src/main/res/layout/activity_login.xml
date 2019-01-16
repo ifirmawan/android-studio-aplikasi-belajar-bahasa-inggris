@@ -160,7 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register Here"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textColor="@color/biru"
             android:clickable="true"/>
         <Button
@@ -171,7 +171,7 @@
             android:layout_centerHorizontal="true"
             android:background="@color/transparan"
             android:onClick="showHelp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:drawableLeft="@drawable/ic_info_outline_black_24dp"
             android:text="Help"
             android:textAllCaps="false"

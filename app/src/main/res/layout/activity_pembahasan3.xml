@@ -1,34 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ListView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".Pembahasan3Activity">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <!--<ImageView-->
-            <!--android:id="@+id/pict1"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="100dp"-->
-            <!--android:layout_marginTop="20dp"-->
-            <!--android:src="@drawable/logobbi"/>-->
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:text="SUKSES"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:textAlignment="center"-->
-            <!--android:textSize="20pt"-->
-            <!--android:paddingTop="250dp"/>-->
-        <ListView
-            android:id="@+id/list"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-    </RelativeLayout>
-</ScrollView>
+    android:orientation="vertical"
+    android:id="@+id/list"
+    android:drawSelectorOnTop="true">
+
+</ListView>

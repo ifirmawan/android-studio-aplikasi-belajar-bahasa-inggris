@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
         //CREATE ITEMS
         AHBottomNavigationItem crimeItem = new AHBottomNavigationItem("Materi", R.drawable.outline_book_white_18dp);
         AHBottomNavigationItem dramaItem = new AHBottomNavigationItem("Quiz", R.drawable.outline_format_list_bulleted_white_18dp);
-        AHBottomNavigationItem docsItem = new AHBottomNavigationItem("Riwayat", R.drawable.baseline_stars_white_18dp);
+        AHBottomNavigationItem docsItem = new AHBottomNavigationItem("Score", R.drawable.baseline_stars_white_18dp);
 //        AHBottomNavigationItem pdfitem = new AHBottomNavigationItem("Ranking", R.drawable.podium);
 
         //ADD PROPERTIES

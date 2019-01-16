@@ -52,7 +52,7 @@
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:background="@color/biru"
+                android:background="@color/custom_progress_blue_progress"
                 android:id="@+id/rumus1"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/nameTxt4"
@@ -99,7 +99,7 @@
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:background="@color/biru"
+                android:background="@color/custom_progress_blue_progress"
                 android:id="@+id/nameTxt4b"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/nameTxt4a"
@@ -145,7 +145,7 @@
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:background="@color/biru"
+                android:background="@color/custom_progress_blue_progress"
                 android:id="@+id/nameTxt4bb"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/nameTxt4aa"

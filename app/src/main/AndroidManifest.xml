@@ -31,11 +31,11 @@
         <activity android:name=".Materi" />
         <activity
             android:name=".IsiMateri1"
-            android:label="Listening Section"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:label="Listening Section">
+            <!--android:parentActivityName=".MainActivity"-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".MainActivity" />-->
         </activity>
         <activity
             android:name=".MulaiQuizA"
@@ -47,27 +47,27 @@
         </activity>
         <activity
             android:name=".RiwayatScoreFragment"
-            android:parentActivityName=".MainActivity"
             android:label="Rank Score Easy">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            <!--android:parentActivityName=".MainActivity"-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".MainActivity" />-->
         </activity>
         <activity
             android:name=".RiwayatScoreFragment2"
-            android:parentActivityName=".MainActivity"
             android:label="Rank Score Medium">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            <!--android:parentActivityName=".MainActivity"-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".MainActivity" />-->
         </activity>
         <activity
             android:name=".RiwayatScoreFragment3"
-            android:label="Rank Score Hard"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:label="Rank Score Hard">
+            <!--android:parentActivityName=".MainActivity"-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".MainActivity" />-->
         </activity>
         <activity android:name=".Quiz.QuizActivity"
             android:label="Quiz"/>
@@ -87,19 +87,19 @@
             />
         <activity
             android:name=".IsiMateri2"
-            android:label="Degree of Comparison"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:label="Degree of Comparison">
+            <!--android:parentActivityName=".MainActivity"-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".MainActivity" />-->
         </activity>
         <activity
             android:name=".IsiMateri3"
-            android:label="Noun and Pronoun"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:label="Noun and Pronoun">
+            <!--android:parentActivityName=".MainActivity"-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".MainActivity" />-->
         </activity>
         <activity android:name=".PembahasanActivity"
             android:label="Explanation"/>
