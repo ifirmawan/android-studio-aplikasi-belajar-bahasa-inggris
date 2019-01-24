@@ -41,8 +41,8 @@ public class LoginActivity extends Activity {
         btnLogin = findViewById(R.id.btnLogin);
         tvRegister = findViewById(R.id.tvRegister);
         cbShow = findViewById(R.id.cbShow);
-        etUname.setError("Username must be filled in");
-        etPassword.setError("Password must be filled in");
+//        etUname.setError("Username must be filled in");
+//        etPassword.setError("Password must be filled in");
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
