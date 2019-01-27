@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.derysudrajat.appsbbi">
+    package="com.lusi.bbi">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".MainActivity"
+            android:name="com.lusi.bbi.MainActivity"
             android:label="@string/app_name"
             android:noHistory="true"
             android:theme="@style/AppTheme.NoActionBar">
@@ -28,9 +28,9 @@
             <!-- </intent-filter> -->
 
         </activity>
-        <activity android:name=".Materi" />
+        <activity android:name="com.lusi.bbi.Materi" />
         <activity
-            android:name=".IsiMateri1"
+            android:name="com.lusi.bbi.IsiMateri1"
             android:label="Listening Section">
             <!--android:parentActivityName=".MainActivity"-->
             <!--<meta-data-->
@@ -38,15 +38,15 @@
                 <!--android:value=".MainActivity" />-->
         </activity>
         <activity
-            android:name=".MulaiQuizA"
-            android:parentActivityName=".MainActivity"
+            android:name="com.lusi.bbi.MulaiQuizA"
+            android:parentActivityName="com.lusi.bbi.MainActivity"
             android:label="Quiz BBI">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.lusi.bbi.MainActivity" />
         </activity>
         <activity
-            android:name=".RiwayatScoreFragment"
+            android:name="com.lusi.bbi.RiwayatScoreFragment"
             android:label="Rank Score Easy">
             <!--android:parentActivityName=".MainActivity"-->
             <!--<meta-data-->
@@ -54,7 +54,7 @@
                 <!--android:value=".MainActivity" />-->
         </activity>
         <activity
-            android:name=".RiwayatScoreFragment2"
+            android:name="com.lusi.bbi.RiwayatScoreFragment2"
             android:label="Rank Score Medium">
             <!--android:parentActivityName=".MainActivity"-->
             <!--<meta-data-->
@@ -62,17 +62,17 @@
                 <!--android:value=".MainActivity" />-->
         </activity>
         <activity
-            android:name=".RiwayatScoreFragment3"
+            android:name="com.lusi.bbi.RiwayatScoreFragment3"
             android:label="Rank Score Hard">
             <!--android:parentActivityName=".MainActivity"-->
             <!--<meta-data-->
                 <!--android:name="android.support.PARENT_ACTIVITY"-->
                 <!--android:value=".MainActivity" />-->
         </activity>
-        <activity android:name=".Quiz.QuizActivity"
+        <activity android:name="com.lusi.bbi.Quiz.QuizActivity"
             android:label="Quiz"/>
         <activity
-            android:name=".SplashActivity"
+            android:name="com.lusi.bbi.SplashActivity"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -80,13 +80,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".Quiz.HasilQuiz"
+        <activity android:name="com.lusi.bbi.LoginActivity" />
+        <activity android:name="com.lusi.bbi.RegisterActivity" />
+        <activity android:name="com.lusi.bbi.Quiz.HasilQuiz"
             android:label="Quiz Result"
             />
         <activity
-            android:name=".IsiMateri2"
+            android:name="com.lusi.bbi.IsiMateri2"
             android:label="Degree of Comparison">
             <!--android:parentActivityName=".MainActivity"-->
             <!--<meta-data-->
@@ -94,46 +94,46 @@
                 <!--android:value=".MainActivity" />-->
         </activity>
         <activity
-            android:name=".IsiMateri3"
+            android:name="com.lusi.bbi.IsiMateri3"
             android:label="Noun and Pronoun">
             <!--android:parentActivityName=".MainActivity"-->
             <!--<meta-data-->
                 <!--android:name="android.support.PARENT_ACTIVITY"-->
                 <!--android:value=".MainActivity" />-->
         </activity>
-        <activity android:name=".PembahasanActivity"
+        <activity android:name="com.lusi.bbi.PembahasanActivity"
             android:label="Explanation"/>
-        <activity android:name=".Pembahasan2Activity"
+        <activity android:name="com.lusi.bbi.Pembahasan2Activity"
             android:label="Explanation Quiz Easy"/>
-        <activity android:name=".Pembahasan3Activity"
+        <activity android:name="com.lusi.bbi.Pembahasan3Activity"
             android:label="Explanation Quiz Medium"/>
-        <activity android:name=".cobaHighScore" />
+        <activity android:name="com.lusi.bbi.cobaHighScore" />
         <activity
-            android:name=".quissimple1"
+            android:name="com.lusi.bbi.quissimple1"
             android:label="Simple Quiz 1"
-            android:parentActivityName=".IsiMateri1">
+            android:parentActivityName="com.lusi.bbi.IsiMateri1">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".IsiMateri1" />
+                android:value="com.lusi.bbi.IsiMateri1" />
         </activity>
         <activity
-            android:name=".quissimple2"
+            android:name="com.lusi.bbi.quissimple2"
             android:label="Simple Quiz 2"
-            android:parentActivityName=".IsiMateri2">
+            android:parentActivityName="com.lusi.bbi.IsiMateri2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".IsiMateri2" />
+                android:value="com.lusi.bbi.IsiMateri2" />
         </activity>
         <activity
-            android:name=".quissimple3"
+            android:name="com.lusi.bbi.quissimple3"
             android:label="Simple Quiz 3"
-            android:parentActivityName=".IsiMateri3">
+            android:parentActivityName="com.lusi.bbi.IsiMateri3">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".IsiMateri3" />
+                android:value="com.lusi.bbi.IsiMateri3" />
         </activity>
-        <activity android:name=".Pembahasan4Activity" />
-        <activity android:name=".Quiz.HasilQuizBaru"
+        <activity android:name="com.lusi.bbi.Pembahasan4Activity" />
+        <activity android:name="com.lusi.bbi.Quiz.HasilQuizBaru"
             android:label="Explanation Quiz Hard"/>
     </application>
 
